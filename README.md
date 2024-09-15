@@ -29,7 +29,7 @@ LogPeers is a minimalist, all-in-one e-learning platform bringing together curat
 <p style="font-family: 'Montserrat', sans-serif;">No installation needed. Just follow these steps:</p>
 
 <ol style="padding-left: 20px; font-family: 'Montserrat', sans-serif;">
-  <li><a href="https://logpeers.com"><strong>Sign Up</strong></a> for an account.</li>
+  <li><a href="https://logpeers.vercel.app/"><strong>Sign Up</strong></a> for an account.</li>
   <li>Follow topics you want to focus on.</li>
   <li>Get real-time updates on newly uploaded materials.</li>
   <li>Access all content in one organized platform.</li>
@@ -61,7 +61,7 @@ LogPeers is a minimalist, all-in-one e-learning platform bringing together curat
 
 ## <p style="font-size: 1.75rem; font-weight: bold; font-family: 'Montserrat', sans-serif;">🌐 Join LogPeers</p>
 
-<p style="font-family: 'Montserrat', sans-serif;">Start learning now at <a href="https://logpeers.com"><strong>LogPeers.com</strong></a></p>
+<p style="font-family: 'Montserrat', sans-serif;">Start learning now at <a href="https://logpeers.vercel.app/"><strong>LogPeers.com</strong></a></p>
 <p style="font-family: 'Montserrat', sans-serif;">An organized, distraction-free platform for focused study.</p>
 
 <p align="center" style="font-size: 1.25rem; font-family: 'Montserrat', sans-serif;">
