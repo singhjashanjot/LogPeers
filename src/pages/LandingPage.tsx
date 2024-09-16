@@ -1,5 +1,4 @@
 import DockDemo from "../components/dock";
-import herovideo from "../assets/videos/macbook low.mp4";
 import "../App.css";
 const LandingPage = () => {
     return (
