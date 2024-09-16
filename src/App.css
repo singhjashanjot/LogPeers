@@ -1,0 +1,13 @@
+@font-face {
+    src: url("./assets/fonts/Relative-Faux.ttf") format("truetype"); /* Update the path */
+    font-family: "Relative Faux";
+    font-weight: normal;
+    font-style: normal;
+}
+
+.crazyfont {
+    font-family: "Relative Faux", sans-serif;
+}
+.f1f0ee {
+    background-color: #f1f0ee;
+}
