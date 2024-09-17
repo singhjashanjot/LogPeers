@@ -1,17 +1,10 @@
-import DockDemo from "../components/dock";
 import "../App.css";
+
 const LandingPage = () => {
     return (
-        
+
         <div className="w-full h-screen f1f0ee">
-            <DockDemo />
-            {/* <video
-                className="absolute w-full h-full object-cover"
-                src={herovideo}
-                autoPlay
-                loop
-                muted
-            /> */}
+          
             <div className="relative z-10 flex items-center justify-center h-screen text-center text-white">
                 <div className="px-6 py-12 md:px-12 md:py-24">
                     <h1 className="md:text-7xl mb-4 crazyfont text-black font-medium text-8xl">
@@ -29,7 +22,7 @@ const LandingPage = () => {
                     </a>
                 </div>
             </div>
-                
+
         </div>
     );
 };
