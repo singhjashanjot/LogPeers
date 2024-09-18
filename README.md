@@ -1,50 +1,69 @@
-# React + TypeScript + Vite
+# <p align="center" style="font-size: 3rem; font-family: 'Montserrat', sans-serif; font-weight: bold;">LogPeers</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center" style="font-family: 'Montserrat', sans-serif;">
+  <img src="https://img.shields.io/badge/Platform-Education-blueviolet?style=flat-square" alt="Platform Badge">
+  <img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=flat-square" alt="Contributions Badge">
+  <img src="https://img.shields.io/badge/License-MIT-informational?style=flat-square" alt="License Badge">
+  <img src="https://img.shields.io/badge/Tech-Focused-orange?style=flat-square" alt="Tech Badge">
+</p>
 
-Currently, two official plugins are available:
+<p align="center" style="font-size: 1.25rem; font-family: 'Montserrat', sans-serif;">
+LogPeers is a minimalist, all-in-one e-learning platform bringing together curated, verified notes and study materials, designed for efficient and focused learning.
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## <p style="font-size: 1.75rem; font-weight: bold; font-family: 'Montserrat', sans-serif;">🚀 Features</p>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<ul style="list-style-type: square; padding-left: 20px; font-family: 'Montserrat', sans-serif;">
+  <li><strong>Topic-Based Feed</strong>: Follow subjects and receive notifications for new and updated content.</li>
+  <li><strong>Expert-Curated Materials</strong>: Verified, well-structured course handouts and study resources.</li>
+  <li><strong>Real-Time Notifications</strong>: Stay up-to-date on the topics you follow.</li>
+  <li><strong>Tech-Focused Content</strong>: Specialized materials tailored for tech learners.</li>
+</ul>
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## <p style="font-size: 1.75rem; font-weight: bold; font-family: 'Montserrat', sans-serif;">💡 Getting Started</p>
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+<p style="font-family: 'Montserrat', sans-serif;">No installation needed. Just follow these steps:</p>
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+<ol style="padding-left: 20px; font-family: 'Montserrat', sans-serif;">
+  <li><a href="https://logpeers.vercel.app/"><strong>Sign Up</strong></a> for an account.</li>
+  <li>Follow topics you want to focus on.</li>
+  <li>Get real-time updates on newly uploaded materials.</li>
+  <li>Access all content in one organized platform.</li>
+</ol>
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+## <p style="font-size: 1.75rem; font-weight: bold; font-family: 'Montserrat', sans-serif;">🛠️ Contributing</p>
+
+<p style="font-family: 'Montserrat', sans-serif;">We encourage contributions! Here's how to get started:</p>
+
+<ol style="padding-left: 20px; font-family: 'Montserrat', sans-serif;">
+  <li>Fork the repository.</li>
+  <li>Create a new branch: <code>git checkout -b feature/your-feature-name</code>.</li>
+  <li>Commit your changes: <code>git commit -m 'Add new feature'</code>.</li>
+  <li>Push the branch: <code>git push origin feature/your-feature-name</code>.</li>
+  <li>Open a Pull Request.</li>
+</ol>
+
+<p style="font-family: 'Montserrat', sans-serif;">For more information, please refer to our <a href="CONTRIBUTING.md"><strong>Contribution Guidelines</strong></a>.</p>
+
+---
+
+## <p style="font-size: 1.75rem; font-weight: bold; font-family: 'Montserrat', sans-serif;">📄 License</p>
+
+<p style="font-family: 'Montserrat', sans-serif;">This project is licensed under the <a href="LICENSE"><strong>MIT License</strong></a> – see the LICENSE file for details.</p>
+
+---
+
+## <p style="font-size: 1.75rem; font-weight: bold; font-family: 'Montserrat', sans-serif;">🌐 Join LogPeers</p>
+
+<p style="font-family: 'Montserrat', sans-serif;">Start learning now at <a href="https://logpeers.vercel.app/"><strong>LogPeers.com</strong></a></p>
+<p style="font-family: 'Montserrat', sans-serif;">An organized, distraction-free platform for focused study.</p>
+
+<p align="center" style="font-size: 1.25rem; font-family: 'Montserrat', sans-serif;">
+  Made with 💖 by the LogPeers Team
+</p>
