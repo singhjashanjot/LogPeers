@@ -3,16 +3,15 @@ import "../App.css";
 const LandingPage = () => {
     return (
 
-        <div className="w-full h-screen f1f0ee">
+        <div className="w-full h-screen text-black dark:bg-black ">
           
-            <div className="relative z-10 flex items-center justify-center h-screen text-center text-white">
+            <div className="relative flex items-center justify-center h-screen text-center text-white">
                 <div className="px-6 py-12 md:px-12 md:py-24">
-                    <h1 className="md:text-7xl mb-4 crazyfont text-black font-medium text-8xl">
-                        Welcome to Our Platform
+                    <h1 className="md:text-7xl mb-4 crazyfont text-black font-medium text-8xl dark:text-slate-100">
+                        Welcome to LogPeers
                     </h1>
-                    <p className="text-lg md:text-2xl mb-8 text-black">
-                        Empowering your learning experience with the best tools
-                        and resources.
+                    <p className="text-lg md:text-2xl mb-8 text-black dark:text-slate-100">
+                    LogPeers is a minimalist, all-in-one e-learning platform bringing together curated, verified notes and study materials, designed for efficient and focused learning.
                     </p>
                     <a
                         href="#features"
