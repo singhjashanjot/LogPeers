@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { PlaceholdersAndVanishInputDemo } from "@/components/searchbar";
 import ThemeToggle from "@/components/ui/dark-mode-button";
 import { cn } from "@/lib/utils";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 
 // import { Icons } from "@/components/icons"
 import {
