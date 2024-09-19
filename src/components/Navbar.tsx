@@ -57,10 +57,10 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuDemo() {
     return (
-        <div className="flex w-full z-10 m-auto justify-between p-2">
-            <div className="flex justify-center items-center">
+        <div className="flex w-full z-10 m-auto justify-between p-2 dark:bg-black">
+            <div className="flex justify-center items-center px-3 gap-4">
 
-            <a href="/">tinglinglingling</a>
+            <a href="/">LogPeers</a>
             <NavigationMenu>
                 <NavigationMenuList>
                     <NavigationMenuItem>
@@ -91,15 +91,13 @@ export function NavigationMenuDemo() {
                                     </NavigationMenuLink>
                                 </li>
                                 <ListItem href="/docs" title="Introduction">
-                                    Re-usable components built using Radix UI
-                                    and Tailwind CSS.
+                                    Re-usable components built using Radix UI and Tailwind CSS.
                                 </ListItem>
                                 <ListItem
                                     href="/docs/installation"
                                     title="Installation"
                                     >
-                                    How to install dependencies and structure
-                                    your app.
+                                    How to install dependencies and structure your app.
                                 </ListItem>
                                 <ListItem
                                     href="/docs/primitives/typography"
