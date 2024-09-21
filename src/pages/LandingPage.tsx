@@ -1,8 +1,10 @@
 import "../App.css";
+import ParticlesBackground from "../components/Particlesbackground";
 
 const LandingPage = () => {
     return (
-        <section className="bg-white dark:bg-black min-h-screen">
+        <section className=" bg-white dark:bg-black min-h-screen">
+           <ParticlesBackground />
             <div className="h-screen px-4 py-8 mx-auto text-center lg:py-16 lg:px-12 flex items-center flex-col justify-center">
                 <a
                     href="#"
