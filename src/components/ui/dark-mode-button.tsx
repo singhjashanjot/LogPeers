@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState('dark')
 
   useEffect(() => {
     // Get the saved theme from localStorage, if available, and apply it
-    const savedTheme = localStorage.getItem('theme') || 'light'
+    const savedTheme = localStorage.getItem('theme') || 'dark'
     setTheme(savedTheme)
     document.documentElement.classList.toggle('dark', savedTheme === 'dark')
   }, [])
@@ -20,7 +20,7 @@ export default function ThemeToggle() {
   }
 
   return (
-    <div className="flex flex-col justify-center ml-3">
+    <div className="flex flex-col justify-center ml-3 items-center">
       <button onClick={toggleTheme} className="relative cursor-pointer p-2">
         {theme === 'dark' ? (
           // Light mode icon (sun)

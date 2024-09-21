@@ -49,31 +49,43 @@ html.lenis, html.lenis body {
     --radius: 0.5rem
   }
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
+    --background: 0 0% 1%; /* Deep charcoal black for a softer dark mode */
+    --foreground: 210 20% 95%; /* Off-white for readability */
+    
+    --card: 0 0% 12%; /* Soft black for card elements */
+    --card-foreground: 210 20% 95%; /* Slightly off-white for text on cards */
+  
+    --popover: 0 0% 12%; /* Match card background */
+    --popover-foreground: 210 20% 95%; /* Off-white for consistency */
+  
+    --primary: 300 50% 50%; /* Aesthetic soft violet instead of harsh blue */
+    --primary-foreground: 210 20% 95%; /* Off-white for text on primary elements */
+  
+    --secondary: 150 20% 35%; /* Soft green-gray for a calmer secondary color */
+    --secondary-foreground: 210 20% 95%; /* Consistent text color */
+  
+    --muted: 0 0% 15%; /* Darker muted gray for inactive elements */
+    --muted-foreground: 210 20% 75%; /* Softer gray-white for readability */
+  
+    --accent: 50 80% 50%; /* Warm golden accent for highlights */
+    --accent-foreground: 210 20% 95%; /* Maintain text readability on accents */
+  
+    --destructive: 0 80% 45%; /* Softer red to reduce harshness */
+    --destructive-foreground: 210 20% 95%; /* Off-white for consistency */
+  
+    --border: 0 0% 25%; /* Medium-dark border for contrast without overpowering */
+    --input: 0 0% 20%; /* Slightly lighter black for inputs */
+  
+    --ring: 50 70% 75%; /* Warm yellow ring for focused elements */
+    
+    --chart-1: 200 65% 55%; /* Vivid but softer tones for charts */
+    --chart-2: 100 50% 50%;
+    --chart-3: 45 85% 65%;
+    --chart-4: 280 60% 55%;
+    --chart-5: 330 70% 65%; /* Softer shades with subtle contrasts */
   }
+  
+
 }
 @layer base {
   * {
