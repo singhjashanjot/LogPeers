@@ -63,7 +63,7 @@ const ParticlesBackground = () => {
                     
                     <a
                         href="#"
-                        className="inline-flex items-center transition ease-out justify-center px-5 py-3 text-base font-medium text-center border border-solid border-neutral-300 shadow-md text-neutral-600 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+                        className="inline-flex items-center transition ease-out justify-center px-7 py-3 text-base font-medium text-center border border-solid border-neutral-300 shadow-md text-neutral-600 bg-white rounded-full  hover:bg-gray-100 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
                     >
                         Get Started For free
                         <svg
