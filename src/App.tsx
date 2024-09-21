@@ -10,7 +10,7 @@ function App() {
     <ReactLenis root options={{ lerp: 0.4 }}>
       <Router>
         <div className="App">
-          <div className='sticky top-0'>
+          <div className='sticky top-3 m-3'>
             <NavBar />
           </div>
 
