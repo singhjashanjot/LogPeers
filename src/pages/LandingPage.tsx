@@ -3,9 +3,9 @@ import ParticlesBackground from "../components/Particlesbackground";
 
 const LandingPage = () => {
     return (
-        <section className=" bg-white dark:bg-black min-h-screen">
+        <section className=" bg-green-50 dark:bg-black min-h-screen ">
            <ParticlesBackground />
-            <div className="h-screen px-4 py-8 mx-auto text-center lg:py-16 lg:px-12 flex items-center flex-col justify-center">
+            {/* <div className="h-screen px-4 py-8 mx-auto text-center lg:py-16 lg:px-12 flex items-center flex-col justify-center">
                 <a
                     href="#"
                     className="inline-flex items-center justify-between px-1 py-1 pr-4 text-sm text-gray-700 bg-gray-100 rounded-full mb-7 dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
@@ -73,7 +73,7 @@ const LandingPage = () => {
                         Watch video
                     </a>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 };

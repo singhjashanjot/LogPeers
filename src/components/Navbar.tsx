@@ -55,93 +55,103 @@ const components: { title: string; href: string; description: string }[] = [
     },
 ];
 
-export function NavigationMenuDemo() {
+export function NavBar() {
     return (
-        <div className="flex w-full z-10 m-auto justify-between p-2 dark:bg-black">
-            <div className="flex justify-center items-center px-3 gap-4">
-
-            <a href="/">LogPeers</a>
-            <NavigationMenu>
-                <NavigationMenuList>
-                    <NavigationMenuItem>
-                        <NavigationMenuTrigger>
-                            Getting started
-                        </NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                                <li className="row-span-3">
-                                    <NavigationMenuLink asChild>
-                                        <a
-                                            className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                                            href="/"
+        <div className="flex w-full z-[999] m-auto justify-between p-2  dark:bg-black border shadow-lg rounded-full">
+            <div className="flex mx-3 justify-center items-center px-3 gap-4">
+                <a className="tracking-wider crazyfont text-xl font-semibold" href="/">LogPeers</a>
+                <NavigationMenu>
+                    <NavigationMenuList>
+                        <NavigationMenuItem>
+                            <NavigationMenuTrigger>
+                                Getting started
+                            </NavigationMenuTrigger>
+                            <NavigationMenuContent>
+                                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                                    <li className="row-span-3">
+                                        <NavigationMenuLink asChild>
+                                            <a
+                                                className=" flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                                                href="/"
                                             >
-                                            {/* <Icons.logo className="h-6 w-6" /> */}
-                                            <div className="mb-2 mt-4 text-lg font-medium">
-                                                LogPeers
-                                            </div>
-                                            <p className="text-sm leading-tight text-muted-foreground">
-                                                LogPeers is a minimalist,
-                                                all-in-one e-learning platform
-                                                bringing together curated,
-                                                verified notes and study
-                                                materials, designed for
-                                                efficient and focused learning.
-                                            </p>
-                                        </a>
-                                    </NavigationMenuLink>
-                                </li>
-                                <ListItem href="/docs" title="Introduction">
-                                    Re-usable components built using Radix UI and Tailwind CSS.
-                                </ListItem>
-                                <ListItem
-                                    href="/docs/installation"
-                                    title="Installation"
-                                    >
-                                    How to install dependencies and structure your app.
-                                </ListItem>
-                                <ListItem
-                                    href="/docs/primitives/typography"
-                                    title="Typography"
-                                    >
-                                    Styles for headings, paragraphs, lists...etc
-                                </ListItem>
-                            </ul>
-                        </NavigationMenuContent>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <NavigationMenuTrigger>Learnings</NavigationMenuTrigger>
-                        <NavigationMenuContent>
-                            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                                {components.map((component) => (
-                                    <ListItem
-                                    key={component.title}
-                                    title={component.title}
-                                    href={component.href}
-                                    >
-                                        {component.description}
+                                                {/* <Icons.logo className="h-6 w-6" /> */}
+                                                <div className="mb-2 mt-4 text-lg font-medium">
+                                                    LogPeers
+                                                </div>
+                                                <p className="text-sm leading-tight text-muted-foreground">
+                                                    LogPeers is a minimalist,
+                                                    all-in-one e-learning
+                                                    platform bringing together
+                                                    curated, verified notes and
+                                                    study materials, designed
+                                                    for efficient and focused
+                                                    learning.
+                                                </p>
+                                            </a>
+                                        </NavigationMenuLink>
+                                    </li>
+                                    <ListItem href="/docs" title="Introduction">
+                                        Re-usable components built using Radix
+                                        UI and Tailwind CSS.
                                     </ListItem>
-                                ))}
-                            </ul>
-                        </NavigationMenuContent>
-                    </NavigationMenuItem>
-                    <NavigationMenuItem>
-                        <Link to="/docs">
-                            <NavigationMenuLink
-                                className={navigationMenuTriggerStyle()}
+                                    <ListItem
+                                        href="/docs/installation"
+                                        title="Installation"
+                                    >
+                                        How to install dependencies and
+                                        structure your app.
+                                    </ListItem>
+                                    <ListItem
+                                        href="/docs/primitives/typography"
+                                        title="Typography"
+                                    >
+                                        Styles for headings, paragraphs,
+                                        lists...etc
+                                    </ListItem>
+                                </ul>
+                            </NavigationMenuContent>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavigationMenuTrigger>
+                                Learnings
+                            </NavigationMenuTrigger>
+                            <NavigationMenuContent>
+                                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                                    {components.map((component) => (
+                                        <ListItem
+                                            key={component.title}
+                                            title={component.title}
+                                            href={component.href}
+                                        >
+                                            {component.description}
+                                        </ListItem>
+                                    ))}
+                                </ul>
+                            </NavigationMenuContent>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <Link to="/docs">
+                                <NavigationMenuLink
+                                    className={navigationMenuTriggerStyle()}
                                 >
-                                Notes
-                            </NavigationMenuLink>
-                        </Link>
-                    </NavigationMenuItem>
-                </NavigationMenuList>
-            </NavigationMenu>
-        </div>
-            <div className="flex px-3 justify-center items-center">
+                                    Notes
+                                </NavigationMenuLink>
+                            </Link>
+                        </NavigationMenuItem>
+                    </NavigationMenuList>
+                </NavigationMenu>
+            </div>
+            <div className="flex justify-center items-center gap-5">
                 <PlaceholdersAndVanishInputDemo />
-                <Button className="rounded-3xl bg-black dark:bg-slate-50 text-white dark:text-slate-800" variant={'outline'}> Sign Up </Button>
+                <Button
+                    className="rounded-3xl bg-black dark:bg-slate-50 text-white dark:text-slate-800"
+                    variant={"outline"}
+                >
+                    {" "}
+                    Sign Up
+                </Button>
                 <ThemeToggle />
             </div>
-            
         </div>
     );
 }
