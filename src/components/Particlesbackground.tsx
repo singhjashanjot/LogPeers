@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 
 import Particles from "@/components/magicui/particles";
 
+
 const ParticlesBackground = () => {
     const [color, setColor] = useState("#000000"); // Default particle color for light mode
   
@@ -39,8 +40,8 @@ const ParticlesBackground = () => {
     }, []);
   
     return (
-        <div className="z-0 selection: flex h-screen n w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background md:shadow-xl">
-            <div className="mx-auto text-center flex items-center flex-col justify-center gap-6">
+        <div className="z-0 flex h-[80vh] n w-full flex-col items-center justify-center overflow-hidden rounded-lg bg-background md:shadow-xl">
+            <div className="mx-auto text-center flex items-center flex-col justify-center gap-6 mt-auto px-5">
                 <div
                     className={cn(
                         "z-50 group rounded-full border border-neutral-500/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-neutral-500 dark:bg-neutral-900 dark:hover:bg-neutral-800"
@@ -51,7 +52,7 @@ const ParticlesBackground = () => {
                         <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                     </AnimatedShinyText>
                 </div>
-                <span className="selection:bg-slate-200 selection:text-black pointer-events-none font-bold whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-6xl  leading-none text-transparent dark:from-white dark:to-slate-900/10">
+                <span className=" pointer-events-none font-bold whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-6xl  leading-none text-transparent dark:from-white dark:to-slate-900/10">
                     WELCOME TO LOGPEERS
                 </span>
                 <p className="mb-8 text-lg text-center font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
@@ -80,6 +81,8 @@ const ParticlesBackground = () => {
                         </svg>
                     </a>
                 </div>
+                <img src="/icons/arrow.gif" className="pointer-events-none mt-10" height={10} alt="" />
+                
                 <Particles
                     className="absolute inset-0 pointer-events-none"
                     quantity={80}

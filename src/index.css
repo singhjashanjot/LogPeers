@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  touch-action: manipulation; /* Prevent touch gestures that can cause zooming */
+}
+
 html.lenis, html.lenis body {
   height: auto;
 }
@@ -22,7 +26,7 @@ html.lenis, html.lenis body {
 }
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 200 20% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -49,41 +53,36 @@ html.lenis, html.lenis body {
     --radius: 0.5rem
   }
   .dark {
-    --background: 0 0% 1%; /* Deep charcoal black for a softer dark mode */
-    --foreground: 210 20% 95%; /* Off-white for readability */
+    --background: 210 100% 1%; /* Very dark gray for the background (near black) */
+    --foreground: 60 150% 99%; /* Off-white for text (slightly softer than pure white) */
     
-    --card: 0 0% 12%; /* Soft black for card elements */
-    --card-foreground: 210 20% 95%; /* Slightly off-white for text on cards */
+    --card: 2 0% 10%; /* Dark gray for card backgrounds */
+    --card-foreground: 0 0% 95%; /* Slightly off-white for card text */
   
-    --popover: 0 0% 12%; /* Match card background */
-    --popover-foreground: 210 20% 95%; /* Off-white for consistency */
+    --popover: 2 0% 10%; /* Match card background for popovers */
+    --popover-foreground: 0 0% 95%; /* Off-white for popover text */
   
-    --primary: 300 50% 50%; /* Aesthetic soft violet instead of harsh blue */
-    --primary-foreground: 210 20% 95%; /* Off-white for text on primary elements */
+    --primary: 0 0% 90%; /* Soft white for primary elements */
+    --primary-foreground: 2 0% 5%; /* Very dark gray for primary text */
   
-    --secondary: 150 20% 35%; /* Soft green-gray for a calmer secondary color */
-    --secondary-foreground: 210 20% 95%; /* Consistent text color */
+    --secondary: 0 0% 85%; /* Light gray for secondary elements */
+    --secondary-foreground: 2 0% 5%; /* Very dark gray for secondary text */
   
-    --muted: 0 0% 15%; /* Darker muted gray for inactive elements */
-    --muted-foreground: 210 20% 75%; /* Softer gray-white for readability */
+    --muted: 2 0% 10%; /* Dark gray for muted elements */
+    --muted-foreground: 0 0% 80%; /* Light gray for muted text */
   
-    --accent: 50 80% 50%; /* Warm golden accent for highlights */
-    --accent-foreground: 210 20% 95%; /* Maintain text readability on accents */
+    --border: 2 0% 15%; /* Darker gray for borders */
+    --input: 2 0% 10%; /* Dark gray for inputs */
   
-    --destructive: 0 80% 45%; /* Softer red to reduce harshness */
-    --destructive-foreground: 210 20% 95%; /* Off-white for consistency */
-  
-    --border: 0 0% 25%; /* Medium-dark border for contrast without overpowering */
-    --input: 0 0% 20%; /* Slightly lighter black for inputs */
-  
-    --ring: 50 70% 75%; /* Warm yellow ring for focused elements */
+    --ring: 0 0% 90%; /* Soft white for focused elements */
     
-    --chart-1: 200 65% 55%; /* Vivid but softer tones for charts */
-    --chart-2: 100 50% 50%;
-    --chart-3: 45 85% 65%;
-    --chart-4: 280 60% 55%;
-    --chart-5: 330 70% 65%; /* Softer shades with subtle contrasts */
-  }
+    --chart-1: 0 0% 90%; /* Soft white for charts */
+    --chart-2: 0 0% 90%; /* Soft white for charts */
+    --chart-3: 0 0% 90%; /* Soft white for charts */
+    --chart-4: 0 0% 90%; /* Soft white for charts */
+    --chart-5: 0 0% 90%; /* Soft white for charts */
+}
+
   
 
 }

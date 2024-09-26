@@ -1,10 +1,10 @@
 "use client";
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { PlaceholdersAndVanishInputDemo } from "@/components/searchbar";
 import ThemeToggle from "@/components/ui/dark-mode-button";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { BookOpen as Book } from "lucide-react";
 
 // import { Icons } from "@/components/icons"
 import {
@@ -57,10 +57,23 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function NavBar() {
     return (
-        <div className="flex w-full z-[999] m-auto justify-between p-2  dark:bg-black border shadow-lg rounded-full">
+        <div className="fixed flex w-full z-[999] m-auto justify-between p-2 backdrop-blur-sm border shadow-lg">
             <div className="flex mx-3 justify-center items-center px-3 gap-4">
-                <a className="tracking-wider crazyfont text-xl font-semibold" href="/">LogPeers</a>
                 <NavigationMenu>
+                    <NavigationMenuList>
+                        
+                <NavigationMenuItem>
+                    <Link to="/">
+                        <NavigationMenuLink
+                            className={navigationMenuTriggerStyle() + 'tracking-wider crazyfont text-xl font-semibold hover:bg-transparent hover:text-white'}
+                            >
+                            LogPeers
+                        </NavigationMenuLink>
+                    </Link>
+                </NavigationMenuItem>
+                                </NavigationMenuList>
+                </NavigationMenu>
+                <NavigationMenu className="">
                     <NavigationMenuList>
                         <NavigationMenuItem>
                             <NavigationMenuTrigger>
@@ -71,10 +84,11 @@ export function NavBar() {
                                     <li className="row-span-3">
                                         <NavigationMenuLink asChild>
                                             <a
-                                                className=" flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                                                className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-neutral-100/50 to-gray-200 p-6 no-underline outline-none focus:shadow-md dark:from-black/10 dark:to-black/90"
                                                 href="/"
                                             >
                                                 {/* <Icons.logo className="h-6 w-6" /> */}
+                                                <Book />
                                                 <div className="mb-2 mt-4 text-lg font-medium">
                                                     LogPeers
                                                 </div>
@@ -141,16 +155,15 @@ export function NavBar() {
                     </NavigationMenuList>
                 </NavigationMenu>
             </div>
-            <div className="flex justify-center items-center gap-5">
-                <PlaceholdersAndVanishInputDemo />
+            <div className="flex justify-center items-center gap-4 mx-3">
+                <ThemeToggle />
                 <Button
-                    className="rounded-3xl bg-black dark:bg-slate-50 text-white dark:text-slate-800"
+                    className="rounded-3xl bg-black dark:bg-slate-50 dark:hover:bg-gray-200 text-white dark:text-slate-800"
                     variant={"outline"}
                 >
                     {" "}
                     Sign Up
                 </Button>
-                <ThemeToggle />
             </div>
         </div>
     );
