@@ -81,7 +81,7 @@ const ParticlesBackground = () => {
                         </svg>
                     </a>
                 </div>
-                <img src="/icons/arrow.gif" className="pointer-events-none mt-10" height={10} alt="" />
+                <img src="/icons/arrow.gif" className="pointer-events-none mt-5" height={10} alt="" />
                 
                 <Particles
                     className="absolute inset-0 pointer-events-none"

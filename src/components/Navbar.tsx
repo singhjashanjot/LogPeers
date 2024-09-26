@@ -17,61 +17,23 @@ import {
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 
-const components: { title: string; href: string; description: string }[] = [
-    {
-        title: "DATA ENGINEERING",
-        href: "/docs/primitives/alert-dialog",
-        description:
-            "A modal dialog that interrupts the user with important content and expects a response.",
-    },
-    {
-        title: "WEB DEVELOPMENT",
-        href: "/docs/primitives/hover-card",
-        description:
-            "For sighted users to preview content available behind a link.",
-    },
-    {
-        title: "DSA(JAVA)",
-        href: "/docs/primitives/progress",
-        description:
-            "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-    },
-    {
-        title: "AI/ML",
-        href: "/docs/primitives/scroll-area",
-        description: "Visually or semantically separates content.",
-    },
-    {
-        title: "OOPS",
-        href: "/docs/primitives/tabs",
-        description:
-            "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-    },
-    {
-        title: "CLOUD",
-        href: "/docs/primitives/tooltip",
-        description:
-            "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-    },
-];
-
 export function NavBar() {
     return (
         <div className="fixed flex w-full z-[999] m-auto justify-between p-2 backdrop-blur-sm border shadow-lg">
             <div className="flex mx-3 justify-center items-center px-3 gap-4">
                 <NavigationMenu>
                     <NavigationMenuList>
-                        
-                <NavigationMenuItem>
-                    <Link to="/">
-                        <NavigationMenuLink
-                            className={navigationMenuTriggerStyle() + 'tracking-wider crazyfont text-xl font-semibold hover:bg-transparent hover:text-white'}
-                            >
-                            LogPeers
-                        </NavigationMenuLink>
-                    </Link>
-                </NavigationMenuItem>
-                                </NavigationMenuList>
+
+                        <NavigationMenuItem>
+                            <Link to="/">
+                                <NavigationMenuLink
+                                    className={navigationMenuTriggerStyle() + 'tracking-wider crazyfont text-xl font-semibold hover:bg-transparent hover:text-white'}
+                                >
+                                    LogPeers
+                                </NavigationMenuLink>
+                            </Link>
+                        </NavigationMenuItem>
+                    </NavigationMenuList>
                 </NavigationMenu>
                 <NavigationMenu className="">
                     <NavigationMenuList>
@@ -126,25 +88,16 @@ export function NavBar() {
                             </NavigationMenuContent>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <NavigationMenuTrigger>
-                                Learnings
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                                <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-                                    {components.map((component) => (
-                                        <ListItem
-                                            key={component.title}
-                                            title={component.title}
-                                            href={component.href}
-                                        >
-                                            {component.description}
-                                        </ListItem>
-                                    ))}
-                                </ul>
-                            </NavigationMenuContent>
+                            <Link to="/learnings">
+                                <NavigationMenuLink
+                                    className={navigationMenuTriggerStyle()}
+                                >
+                                    Learnings
+                                </NavigationMenuLink>
+                            </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
-                            <Link to="/docs">
+                            <Link to="/notes">
                                 <NavigationMenuLink
                                     className={navigationMenuTriggerStyle()}
                                 >

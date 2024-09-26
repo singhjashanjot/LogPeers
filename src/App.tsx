@@ -8,23 +8,25 @@ function App() {
     return (
         // Set the "lerp" (linear interpolation) value to a lower value for faster scrolling
         <ReactLenis root options={{ lerp: 0.2 }}>
-        <Router>
-            <div className="App selection:bg-slate-200 selection:text-black">
-                <div className="">
-                    <NavBar />
-                </div>
+            <Router>
+                <div className="App selection:bg-slate-200 selection:text-black">
+                    <div className="">
+                        <NavBar />
+                    </div>
 
-                <Routes>
-                    <Route path="/" element={<LandingPage />} />
-                    <Route path="/notes" element={<Documentation />} />
-                </Routes>
-            </div>
-        </Router>
+                    <Routes>
+                        <Route path="/" element={<LandingPage />} />
+                        <Route path="/learnings" element={<Learnings />} />
+                        <Route path="/notes" element={<Notes />} />
+                    </Routes>
+                </div>
+            </Router>
         </ReactLenis>
     );
 }
 
 // Example Components for Routing
-const Documentation = () => <div>Documentation Page</div>;
+const Learnings = () => <div>Learnings page</div>;
+const Notes = () => <div>Notes page</div>;
 
 export default App;

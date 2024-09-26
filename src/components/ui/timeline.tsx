@@ -35,7 +35,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             <div className="flex flex-row items-center max-w-7xl lg:mx-auto px-4 md:px-8 portrait:flex-col portrait:justify-center lg:px-10">
                 <div>
                     <h2 className="my-8 portrait:text-center pointer-events-none font-bold whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-left text-6xl leading-none text-transparent dark:from-white dark:to-slate-900/10">
-                        What We Offer
+                        What We Offer 
                     </h2>
                     <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-lg portrait:text-center ml-auto">
                         At LogPeers, we&apos;re dedicated to transforming the

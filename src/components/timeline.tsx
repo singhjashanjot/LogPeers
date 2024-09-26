@@ -4,12 +4,11 @@ import { Timeline } from "@/components/ui/timeline";
 export default function timeline() {
   const data = [
     {
-      title: "2024",
+      title: "Curated Notes",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
-          </p>
+          Access a wealth of well-organized notes, handouts, and resources tailored to your courses, making studying more efficient and enjoyable.          </p>
           <div className="grid grid-cols-2 gap-4">
             <img
               src="https://assets.aceternity.com/templates/startup-1.webp"
@@ -44,16 +43,14 @@ export default function timeline() {
       ),
     },
     {
-      title: "Early 2023",
+      title: "Topic-Based Feeds",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+          Follow the subjects you care about most!
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
+            Get real-time updates and notifications on new materials, ensuring you're always in the loop.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <img
@@ -89,27 +86,27 @@ export default function timeline() {
       ),
     },
     {
-      title: "Changelog",
+      title: "Collaborative Learning",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on Aceternity today
+          Engage with a community of learners. Share insights, ask questions, and collaborate on study materials to enhance your understanding.
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Card grid component
+              ✅ User-Friendly Interface.
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Startup template Aceternity
+              ✅ Customizable Learning Paths.
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Random file upload lol
+              ✅ Designed with the learner in mind.
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
+              ✅ Tailor your educational experience with personalized study plans.
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
+              ✅ Unlock your potential with resources and a community that supports your academic success.
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">
