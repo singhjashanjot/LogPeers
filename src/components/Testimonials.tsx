@@ -81,7 +81,7 @@ const ReviewCard = ({
 export function MarqueeDemo() {
     return (
         <div>
-            <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+            <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background ">
                 <h1 className=" pointer-events-none font-bold whitespace-pre-wrap bg-gradient-to-b from-black to-gray-400/80 bg-clip-text text-center text-4xl 
              leading-none text-transparent dark:from-white dark:to-slate-900/10 py-10">Here's What Our Users Have To Say About Us. </h1>
 

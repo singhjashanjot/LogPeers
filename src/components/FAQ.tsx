@@ -14,7 +14,7 @@ export default function MinimalistFAQSection() {
     console.log(hoveredItem);
 
     return (
-        <section className="w-full max-w-4xl mx-auto py-16 px-4 bg-white dark:bg-black transition-colors duration-300">
+        <section className="w-screen  mx-auto py-16 px-80 bg-white dark:bg-black transition-colors duration-300">
             <h2 className="pointer-events-none font-bold whitespace-pre-wrap bg-gradient-to-b from-black to-gray-400/80 bg-clip-text text-center text-4xl 
              leading-none text-transparent dark:from-white dark:to-slate-900/10 py-10">
                 Frequently Asked Questions
@@ -26,20 +26,20 @@ export default function MinimalistFAQSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: index * 0.1 }}
+                        className="w-full"
                     >
                         <AccordionItem
                             value={item}
                             className="border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden transition-all duration-300"
                             onMouseEnter={() => setHoveredItem(item)}
                             onMouseLeave={() => setHoveredItem(null)}
-
                         >
-                            <AccordionTrigger className="px-6 py-4 bg-white dark:bg-black hover:bg-gray-50 dark:hover:bg-gray-900 transition-all duration-300">
+                            <AccordionTrigger className="px-6 py-4 bg-white dark:bg-black hover:bg-gray-200 dark:hover:bg-slate-100/10 transition-all duration-300">
                                 <span className="text-lg font-semibold text-black dark:text-white">
                                     {getQuestion(item)}
                                 </span>
                             </AccordionTrigger>
-                            <AccordionContent className="px-6 py-4 bg-gray-50 dark:bg-gray-900">
+                            <AccordionContent className="px-6 py-4 bg-gray-100 dark:bg-slate-100/5">
                                 <motion.p
                                     initial={{ opacity: 0, y: 10 }}
                                     animate={{ opacity: 1, y: 0 }}
@@ -60,11 +60,12 @@ export default function MinimalistFAQSection() {
 function getQuestion(item: string): string {
     switch (item) {
         case 'item-1':
-            return "How do I create an account?"
+            return "Why choose LogPeers over others?"
         case 'item-2':
-            return "What payment methods do you accept?"
+            return "How LogPeers help students in their learnings ?"
         case 'item-3':
-            return "How can I contact customer support?"
+            return "How can I contribute my notes with others through LogPeers?"
+
         default:
             return ""
     }
