@@ -1,16 +1,18 @@
-import ParticlesBackground from "../components/Particlesbackground";
+import ParticlesBackground from "@/components/molecules/Particlesbackground";
 import "../App.css";
-import TimeLine from "@/components/timeline";
-import { MarqueeDemo } from "@/components/Testimonials";
-import MinimalistFAQSection from "@/components/FAQ";
+import TimeLine from "@/components/molecules/timeline";
+import Testimonials from "@/components/molecules/Testimonials";
+import MinimalistFAQSection from "@/components/molecules/FAQ";
+import Footer from "@/components/molecules/footer";
 
 const LandingPage = () => {
     return (
         <section className=" bg-green-50 dark:bg-black min-h-screen ">
             <ParticlesBackground />
             <TimeLine />
-            <MarqueeDemo />
-            <MinimalistFAQSection/>
+            <Testimonials />
+            <MinimalistFAQSection />
+            <Footer />
         </section>
     );
 };

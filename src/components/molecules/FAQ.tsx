@@ -14,19 +14,18 @@ export default function MinimalistFAQSection() {
     console.log(hoveredItem);
 
     return (
-        <section className="w-screen  mx-auto py-16 px-80 bg-white dark:bg-black transition-colors duration-300">
+        <section className="w-full mx-auto py-16 px-4 bg-white dark:bg-black transition-colors duration-300">
             <h2 className="pointer-events-none font-bold whitespace-pre-wrap bg-gradient-to-b from-black to-gray-400/80 bg-clip-text text-center text-4xl 
              leading-none text-transparent dark:from-white dark:to-slate-900/10 py-10">
                 Frequently Asked Questions
             </h2>
-            <Accordion type="single" collapsible className="w-full space-y-4">
+            <Accordion type="single" collapsible className="w-full space-y-4 max-w-4xl mx-auto">
                 {['item-1', 'item-2', 'item-3'].map((item, index) => (
                     <motion.div
                         key={item}
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: index * 0.1 }}
-                        className="w-full"
                     >
                         <AccordionItem
                             value={item}

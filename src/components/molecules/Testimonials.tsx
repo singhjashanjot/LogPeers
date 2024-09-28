@@ -78,7 +78,7 @@ const ReviewCard = ({
     );
 };
 
-export function MarqueeDemo() {
+export default function Testimonials() {
     return (
         <div>
             <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background ">
