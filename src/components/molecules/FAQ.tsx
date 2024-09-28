@@ -1,22 +1,48 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react';
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "@/components/ui/accordion"
-import { motion } from 'framer-motion'
+} from "@/components/ui/accordion";
+import { motion } from 'framer-motion';
 
 export default function MinimalistFAQSection() {
-    const [hoveredItem, setHoveredItem] = useState<string | null>(null)
-    console.log(hoveredItem);
+    const [inView, setInView] = useState(false); // State to track if component is in view
+    const sectionRef = useRef<HTMLDivElement | null>(null); // Ref for the section
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setInView(true);
+                    observer.disconnect(); // Stop observing after the first entry
+                }
+            },
+            {
+                threshold: 0.1, // Adjust as necessary
+            }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            observer.disconnect(); // Cleanup observer on unmount
+        };
+    }, []);
 
     return (
-        <section className="w-full mx-auto py-16 px-4 bg-white dark:bg-black transition-colors duration-300">
+        <section 
+            ref={sectionRef} 
+            className="w-full mx-auto py-16 px-4 bg-white dark:bg-black transition-colors duration-300"
+        >
             <h2 className="pointer-events-none font-bold whitespace-pre-wrap bg-gradient-to-b from-black to-gray-400/80 bg-clip-text text-center text-4xl 
-             leading-none text-transparent dark:from-white dark:to-slate-900/10 py-10">
+                leading-none text-transparent dark:from-white dark:to-slate-900/10 py-10"
+            >
                 Frequently Asked Questions
             </h2>
             <Accordion type="single" collapsible className="w-full space-y-4 max-w-4xl mx-auto">
@@ -24,14 +50,12 @@ export default function MinimalistFAQSection() {
                     <motion.div
                         key={item}
                         initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
+                        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                         transition={{ delay: index * 0.1 }}
                     >
                         <AccordionItem
                             value={item}
                             className="border border-gray-200 dark:border-gray-800 rounded-lg overflow-hidden transition-all duration-300"
-                            onMouseEnter={() => setHoveredItem(item)}
-                            onMouseLeave={() => setHoveredItem(null)}
                         >
                             <AccordionTrigger className="px-6 py-4 bg-white dark:bg-black hover:bg-gray-200 dark:hover:bg-slate-100/10 transition-all duration-300">
                                 <span className="text-lg font-semibold text-black dark:text-white">
@@ -53,32 +77,31 @@ export default function MinimalistFAQSection() {
                 ))}
             </Accordion>
         </section>
-    )
+    );
 }
 
 function getQuestion(item: string): string {
     switch (item) {
         case 'item-1':
-            return "Why choose LogPeers over others?"
+            return "Why choose LogPeers over others?";
         case 'item-2':
-            return "How LogPeers help students in their learnings ?"
+            return "How LogPeers help students in their learnings?";
         case 'item-3':
-            return "How can I contribute my notes with others through LogPeers?"
-
+            return "How can I contribute my notes with others through LogPeers?";
         default:
-            return ""
+            return "";
     }
 }
 
 function getAnswer(item: string): string {
     switch (item) {
         case 'item-1':
-            return "To create an account, click on the 'Sign Up' button in the top right corner of our homepage. Fill in your details, including your email address and a secure password. Once you've completed the form, click 'Create Account' and follow the verification steps sent to your email."
+            return "LogPeers stands out for its intuitive interface and collaborative features, making study easier and more effective.";
         case 'item-2':
-            return "We accept a variety of payment methods including credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers. For specific regional payment options, please check our payment page or contact our customer support."
+            return "LogPeers enhances learning by providing structured notes, interactive content, and a community for sharing insights.";
         case 'item-3':
-            return "Our customer support team is available 24/7. You can reach us through our contact form on the website, by email at support@example.com, or by phone at +1 (800) 123-4567. For fastest response, please include your order number or account details when contacting us."
+            return "You can easily contribute by uploading your notes on the platform, allowing others to benefit from your knowledge.";
         default:
-            return ""
+            return "";
     }
 }
