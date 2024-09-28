@@ -18,6 +18,7 @@ function App() {
                         <Route path="/" element={<LandingPage />} />
                         <Route path="/learnings" element={<Learnings />} />
                         <Route path="/notes" element={<Notes />} />
+                        <Route path="/about" />
                     </Routes>
                 </div>
             </Router>
