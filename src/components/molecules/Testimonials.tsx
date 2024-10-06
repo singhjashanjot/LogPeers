@@ -5,43 +5,61 @@ const reviews = [
     {
         name: "Jashanjot Singh",
         username: "@singhjashanjot",
-        body: "I've never seen anything like this before. It's amazing. I love it.",
+        body: "A game-changer! Absolutely phenomenal!",
         img: "https://avatars.githubusercontent.com/u/161365081?v=4",
     },
     {
         name: "Gursimran Singh",
         username: "@gursimrxnsingh",
-        body: "I don't know what to say. I'm speechless. This is amazing.",
+        body: "Incredible! Exceeded all my expectations.",
         img: "https://avatars.githubusercontent.com/u/135122793?v=4",
     },
     {
-        name: "John",
-        username: "@john",
-        body: "I'm at a loss for words. This is amazing. I love it.",
-        img: "https://avatar.vercel.sh/john",
+        name: "Krrxshh",
+        username: "@Krrxshh",
+        body: "Impressive work! Great attention to detail.",
+        img: "https://avatars.githubusercontent.com/u/174702812?v=4",
     },
     {
-        name: "Jane",
-        username: "@jane",
-        body: "I'm at a loss for words. This is amazing. I love it.",
+        name: "Simarjeet Singh",
+        username: "@simxrjeet",
+        body: "Absolutely speechless! Highly recommend!",
         img: "https://avatar.vercel.sh/jane",
     },
     {
         name: "Jenny",
         username: "@jenny",
-        body: "I'm at a loss for words. This is amazing. I love it.",
+        body: "Fantastic experience! Truly impressive!",
         img: "https://avatar.vercel.sh/jenny",
     },
     {
         name: "James",
         username: "@james",
-        body: "I'm at a loss for words. This is amazing. I love it.",
+        body: "Thankful for the amazing community support!",
         img: "https://avatar.vercel.sh/james",
     },
 ];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+interface Review {
+    name: string;
+    username: string;
+    body: string;
+    img: string;
+}
+
+// funcion to shuffle the reviews
+const shuffleArray = (array: Review[]): Review[] => {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+    }
+    return array;
+};
+
+
+const shuffledReviews = shuffleArray([...reviews]);
+const firstRow = shuffledReviews.slice(0, Math.ceil(shuffledReviews.length / 2));
+const secondRow = shuffledReviews.slice(Math.ceil(shuffledReviews.length / 2));
 
 const ReviewCard = ({
     img,

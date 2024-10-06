@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { NavBar } from "@/components/Navbar"; // Import your component
 import LandingPage from "./pages/LandingPage";
+import SubjectPage from "./notes/data-structures";
 import "./index.css";
 import { ReactLenis } from "lenis/react"; // Correct import for ReactLenis
+import Notes from "./pages/Notes";
 
 function App() {
     return (
@@ -18,6 +20,7 @@ function App() {
                         <Route path="/" element={<LandingPage />} />
                         <Route path="/learnings" element={<Learnings />} />
                         <Route path="/notes" element={<Notes />} />
+                        <Route path="/notes/:subjectId" element={<SubjectPage />} />
                         <Route path="/about" />
                     </Routes>
                 </div>
@@ -28,6 +31,5 @@ function App() {
 
 // Example Components for Routing
 const Learnings = () => <div>Learnings page</div>;
-const Notes = () => <div>Notes page</div>;
 
 export default App;
