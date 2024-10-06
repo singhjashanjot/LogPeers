@@ -65,5 +65,5 @@ LogPeers is a minimalist, all-in-one e-learning platform bringing together curat
 <p style="font-family: 'Montserrat', sans-serif;">An organized, distraction-free platform for focused study.</p>
 
 <p align="center" style="font-size: 1.25rem; font-family: 'Montserrat', sans-serif;">
-  Made with 💖 by the LogPeers Team
+  Made with 💖 by <a href="https://linkedin.com/in/gursimrxnsingh">Gursimran Singh</a> and <a href="https://linkedin.com/in/jashanjotsingh01">Jashanjot Singh</a>
 </p>
