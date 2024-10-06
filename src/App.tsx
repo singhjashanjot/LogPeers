@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { NavBar } from "@/components/Navbar"; // Import your component
 import LandingPage from "./pages/LandingPage";
-import SubjectPage from "./notes/data-structures";
+import SubjectPage from "./notes/SubjectPage";
 import "./index.css";
 import { ReactLenis } from "lenis/react"; // Correct import for ReactLenis
 import Notes from "./pages/Notes";
