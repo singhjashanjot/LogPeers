@@ -5,6 +5,7 @@ import SubjectPage from "./notes/SubjectPage";
 import "./index.css";
 import { ReactLenis } from "lenis/react"; // Correct import for ReactLenis
 import Notes from "./pages/Notes";
+import { About } from "./pages/About";
 
 function App() {
     return (
@@ -21,7 +22,7 @@ function App() {
                         <Route path="/learnings" element={<Learnings />} />
                         <Route path="/notes" element={<Notes />} />
                         <Route path="/notes/:subjectId" element={<SubjectPage />} />
-                        <Route path="/about" />
+                        <Route path="/about" element={<About/>}/>
                     </Routes>
                 </div>
             </Router>
