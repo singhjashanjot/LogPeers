@@ -8,16 +8,14 @@ export function About() {
     const teamMembers = [
         {
             name: 'Jashanjot Singh',
-            image: "jashan.jpeg",
-            devname: 'Jashanjot Singh',
+            image: "https://avatars.githubusercontent.com/u/161365081?v=4",
             year: '2nd Year BCA Student',
             description: 'Jashanjot Singh is a full stack web developer with a passion for creating seamless user experiences. Skilled in both front-end and back-end technologies, he is dedicated to building innovative web solutions.',
             linkedin: 'https://www.linkedin.com/in/jashanjotsingh01/'
         },
         {
             name: 'Gursimran Singh',
-            image: '/placeholder.svg?height=300&width=300',
-            devname: 'Gursimran Singh',
+            image: 'https://avatars.githubusercontent.com/u/135122793?v=4',
             year: '2nd Year BCA Student',
             description: 'Gursimran Singh is a .NET developer proficient in data structures and algorithms. With a keen eye for detail, he excels at creating efficient and scalable software solutions."',
             linkedin: 'https://www.linkedin.com/in/gursimrxnsingh/'
@@ -59,7 +57,7 @@ export function About() {
                         {teamMembers.map((member, index) => (
                             <motion.div
                                 key={index}
-                                className="bg-white rounded-lg shadow-lg overflow-hidden  max-w-md mx-auto" // Adjust max-w-xs to control card size
+                                className="bg-background bg-opacity-5 rounded-lg shadow-lg overflow-hidden flex justify-center items-center p-3 flex-col max-w-md mx-auto" // Adjust max-w-xs to control card size
                                 whileHover={{ scale: 1.05 }}
 
                             >
@@ -68,11 +66,10 @@ export function About() {
                                     alt={member.name}
                                     width={300}
                                     height={300}
-                                    className="w-full h-32 object-cover" // Adjust height to control image size
+                                    className="w-full h-32 object-cover opacity-100 rounded-full" // Adjust height to control image size
                                 />
                                 <div className="p-4"> {/* Adjust padding to control spacing */}
                                     <h3 className="text-lg font-bold mb-2">{member.name}</h3>
-                                    <p className="text-gray-600 mb-2">{member.devname}</p>
                                     <p className="text-gray-500 mb-4">{member.year}</p>
                                     <p className="text-gray-600 mb-4">{member.description}</p>
                                     <a
