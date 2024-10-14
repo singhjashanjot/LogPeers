@@ -32,9 +32,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             className="w-full bg-white dark:bg-black font-sans md:px-10"
             ref={containerRef}
         >
-            <div className="flex flex-row items-center max-w-7xl lg:mx-auto px-4 md:px-8 portrait:flex-col portrait:justify-center lg:px-10">
+            <div className="flex flex-row items-center max-w-7xl lg:mx-auto px-4 md:px-8 portrait:flex-col-reverse portrait:justify-center lg:px-10">
                 <div>
-                    <h2 className="my-8 portrait:text-center pointer-events-none font-bold whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-left text-6xl leading-none text-transparent dark:from-white dark:to-slate-900/10">
+                    <h2 className="my-8 pointer-events-none font-bold whitespace-pre-wrap bg-gradient-to-b from-black via-gray-900 to-gray-700 bg-clip-text text-center lg:text-left text-4xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight sm:leading-snug md:leading-none text-transparent dark:from-white dark:via-gray-300 dark:to-gray-500/80">
                         What We Offer 
                     </h2>
                     <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-lg portrait:text-center ml-auto">

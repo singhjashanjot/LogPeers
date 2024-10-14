@@ -24,7 +24,7 @@ const reviews = [
         name: "Simarjeet Singh",
         username: "@simxrjeet",
         body: "Absolutely speechless! Highly recommend!",
-        img: "https://avatar.vercel.sh/jane",
+        img: "https://media.licdn.com/dms/image/v2/D5635AQHaf2GEWAMd3g/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1719340314523?e=1729533600&v=beta&t=Tp945yWPJ5Rgkz1Qv6KQq5zrdbfAgxcglRPIBSKFxIg",
     },
     {
         name: "Jenny",
