@@ -12,7 +12,7 @@ LogPeers is a minimalist, all-in-one e-learning platform bringing together curat
 </p>
 
 ![image](![logpeers_home](https://github.com/user-attachments/assets/64e888d5-64f4-4132-bcd7-1055cc1e3eee)
-)
+
 
 ## <p style="font-size: 1.75rem; font-weight: bold; font-family: 'Montserrat', sans-serif;">🚀 Features</p>
 
