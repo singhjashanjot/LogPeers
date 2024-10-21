@@ -1,4 +1,8 @@
-# <p align="center" style="font-size: 3rem; font-family: 'Montserrat', sans-serif; font-weight: bold;">LogPeers</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/69c3ec04-ee09-4091-9750-34b059de81e5" alt="LogPeers Home Page">
+</p>
+
+<h1 align="center" style="font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 3rem;">LogPeers</h1>
 
 <p align="center" style="font-family: 'Montserrat', sans-serif;">
   <img src="https://img.shields.io/badge/Platform-Education-blueviolet?style=flat-square" alt="Platform Badge">
@@ -7,64 +11,75 @@
   <img src="https://img.shields.io/badge/Tech-Focused-orange?style=flat-square" alt="Tech Badge">
 </p>
 
-<p align="center" style="font-size: 1.25rem; font-family: 'Montserrat', sans-serif;">
-LogPeers is a minimalist, all-in-one e-learning platform bringing together curated, verified notes and study materials, designed for efficient and focused learning.
+<p align="center" style="font-family: 'Montserrat', sans-serif; font-size: 1.25rem;">
+  LogPeers is a minimalist, all-in-one e-learning platform that brings together curated, verified notes and study materials, designed for efficient and focused learning.
 </p>
 
-![image](![logpeers_home](https://github.com/user-attachments/assets/64e888d5-64f4-4132-bcd7-1055cc1e3eee)
-
-
-## <p style="font-size: 1.75rem; font-weight: bold; font-family: 'Montserrat', sans-serif;">🚀 Features</p>
-
-<ul style="list-style-type: square; padding-left: 20px; font-family: 'Montserrat', sans-serif;">
-  <li><strong>Topic-Based Feed</strong>: Follow subjects and receive notifications for new and updated content.</li>
-  <li><strong>Expert-Curated Materials</strong>: Verified, well-structured course handouts and study resources.</li>
-  <li><strong>Real-Time Notifications</strong>: Stay up-to-date on the topics you follow.</li>
-  <li><strong>Tech-Focused Content</strong>: Specialized materials tailored for tech learners.</li>
-</ul>
-
----
-
-## <p style="font-size: 1.75rem; font-weight: bold; font-family: 'Montserrat', sans-serif;">💡 Getting Started</p>
-
-<p style="font-family: 'Montserrat', sans-serif;">No installation needed. Just follow these steps:</p>
-
-<ol style="padding-left: 20px; font-family: 'Montserrat', sans-serif;">
-  <li><a href="https://logpeers.vercel.app/"><strong>Sign Up</strong></a> for an account.</li>
-  <li>Follow topics you want to focus on.</li>
-  <li>Get real-time updates on newly uploaded materials.</li>
-  <li>Access all content in one organized platform.</li>
-</ol>
-
----
-
-## <p style="font-size: 1.75rem; font-weight: bold; font-family: 'Montserrat', sans-serif;">🛠️ Contributing</p>
-
-<p style="font-family: 'Montserrat', sans-serif;">We encourage contributions! Here's how to get started:</p>
-
-<ol style="padding-left: 20px; font-family: 'Montserrat', sans-serif;">
-  <li>Fork the repository.</li>
-  <li>Create a new branch: <code>git checkout -b feature/your-feature-name</code>.</li>
-  <li>Commit your changes: <code>git commit -m 'Add new feature'</code>.</li>
-  <li>Push the branch: <code>git push origin feature/your-feature-name</code>.</li>
-  <li>Open a Pull Request.</li>
-</ol>
-
-<p style="font-family: 'Montserrat', sans-serif;">For more information, please refer to our <a href="CONTRIBUTING.md"><strong>Contribution Guidelines</strong></a>.</p>
-
----
-
-## <p style="font-size: 1.75rem; font-weight: bold; font-family: 'Montserrat', sans-serif;">📄 License</p>
-
-<p style="font-family: 'Montserrat', sans-serif;">This project is licensed under the <a href="LICENSE"><strong>MIT License</strong></a> – see the LICENSE file for details.</p>
-
----
-
-## <p style="font-size: 1.75rem; font-weight: bold; font-family: 'Montserrat', sans-serif;">🌐 Join LogPeers</p>
-
-<p style="font-family: 'Montserrat', sans-serif;">Start learning now at <a href="https://logpeers.vercel.app/"><strong>LogPeers.com</strong></a></p>
-<p style="font-family: 'Montserrat', sans-serif;">An organized, distraction-free platform for focused study.</p>
-
-<p align="center" style="font-size: 1.25rem; font-family: 'Montserrat', sans-serif;">
-  Made with 💖 by <a href="https://linkedin.com/in/gursimrxnsingh">Gursimran Singh</a> and <a href="https://linkedin.com/in/jashanjotsingh01">Jashanjot Singh</a>
+<p align="center" style="font-family: 'Montserrat', sans-serif;">
+  Made with 💖 by <a href="https://linkedin.com/in/gursimrxnsingh" style="text-decoration: none;"><i>Gursimran Singh</i></a> and <a href="https://linkedin.com/in/jashanjotsingh01"><i>Jashanjot Singh</i></a>
 </p>
+
+## Why LogPeers?
+
+In today's fast-paced academic landscape, students often find themselves overwhelmed by the sheer volume of information available. Navigating through unreliable sources can be a daunting task. **LogPeers** emerges as a solution, a beacon of reliability in a sea of chaos. Our platform is meticulously designed to bring together only the most credible and curated study materials, empowering learners to focus on what truly matters: their education.
+
+At **LogPeers**, we believe in the power of collaboration and knowledge sharing. Our mission is to cultivate a vibrant community where students and educators can connect, share insights, and support each other's learning journeys. Together, we can transform the way education is accessed and experienced!
+
+## <img src="https://cdn-icons-png.flaticon.com/512/1541/1541425.png" width="25px"> Features
+
+- **Topic-Based Feed**  
+  Immerse yourself in your favorite subjects. Follow topics of interest and receive real-time notifications for new content, ensuring you’re always updated.
+
+- **Expert-Curated Materials**  
+  Access a collection of verified and well-structured course handouts and study resources, designed to streamline your learning process and enhance understanding.
+
+- **Real-Time Notifications**  
+  Stay informed with instant notifications on the topics you follow. Never miss important updates or new materials that can aid your studies.
+
+- **Tech-Focused Content**  
+  Discover specialized materials tailored for tech learners, making it easier to grasp complex concepts and stay ahead in the evolving tech landscape.
+
+- **Community Engagement**  
+  Engage with fellow learners and educators to share insights and resources, fostering collaboration and enriching your learning experience.
+
+## <img src="https://cdn-icons-png.flaticon.com/512/10273/10273291.png" width="25px"> Getting Started
+
+Getting started with LogPeers is easy! No installation needed. Just follow these steps:
+
+1. **[Sign Up](https://logpeers.vercel.app/)** for an account.
+2. Explore and follow topics that interest you.
+3. Receive real-time updates on newly uploaded materials.
+4. Access all content in one organized platform.
+
+## <img src="https://cdn-icons-png.flaticon.com/512/1336/1336989.png" width="25px"> Contributing
+
+We encourage contributions! Here's how to get started:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature-name`.
+3. Commit your changes: `git commit -m 'Add new feature'`.
+4. Push the branch: `git push origin feature/your-feature-name`.
+5. Open a Pull Request.
+
+For more information, please refer to our [Contribution Guidelines](CONTRIBUTING.md).
+
+## <img src="https://cdn-icons-png.flaticon.com/512/8277/8277085.png" width="25px"> License
+
+This project is licensed under the [GPL 3.0 license](LICENSE) – see the LICENSE file for details.
+
+## <img src="https://cdn-icons-png.flaticon.com/512/5705/5705821.png" width="25px"> Join LogPeers
+
+Start learning now at **[LogPeers.com](https://logpeers.vercel.app/)**  
+An organized, distraction-free platform for focused study.
+
+## <img src="https://cdn-icons-png.flaticon.com/512/3812/3812272.png" width="25px"> Future Plans
+
+We are constantly working on improving LogPeers! Future enhancements include:
+
+- **AI Integration**: Integrating AI-powered recommendations for personalized learning paths.
+- **Content Expansion**: Expanding our content library with diverse subjects.
+- **Community Features**: Enhancing community features for better collaboration and engagement.
+
+## <img src="https://cdn-icons-png.flaticon.com/512/9195/9195221.png" width="25px"> Contact Us
+
+Have questions or suggestions? Reach out to us at [support@logpeers.com](mailto:support@logpeers.com) or connect with us on [LinkedIn](https://linkedin.com/in/gursimrxnsingh)!
