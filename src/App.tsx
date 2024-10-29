@@ -6,6 +6,7 @@ import "./index.css";
 import { ReactLenis } from "lenis/react"; // Correct import for ReactLenis
 import Notes from "./pages/Notes";
 import { About } from "./pages/About";
+import Learnings from "./pages/Learnings";
 
 function App() {
     return (
@@ -31,6 +32,5 @@ function App() {
 }
 
 // Example Components for Routing
-const Learnings = () => <div>Learnings page</div>;
 
 export default App;
