@@ -7,6 +7,7 @@ import { ReactLenis } from "lenis/react"; // Correct import for ReactLenis
 import Notes from "./pages/Notes";
 import { About } from "./pages/About";
 import Learnings from "./pages/Learnings";
+import NotFound from "./pages/404";
 
 function App() {
     return (
@@ -23,7 +24,8 @@ function App() {
                         <Route path="/learnings" element={<Learnings />} />
                         <Route path="/notes" element={<Notes />} />
                         <Route path="/notes/:subjectId" element={<SubjectPage />} />
-                        <Route path="/about" element={<About/>}/>
+                        <Route path="/about" element={<About />} />
+                        <Route path="*" element={<NotFound />} />
                     </Routes>
                 </div>
             </Router>
