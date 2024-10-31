@@ -49,9 +49,9 @@ export default function MinimalistFAQSection() {
                 {['item-1', 'item-2', 'item-3'].map((item, index) => (
                     <motion.div
                         key={item}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                        transition={{ delay: index * 0.1 }}
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+                        transition={{ delay: index * 0.2 }}
                     >
                         <AccordionItem
                             value={item}

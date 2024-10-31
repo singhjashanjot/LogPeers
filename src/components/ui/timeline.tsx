@@ -1,7 +1,7 @@
 "use client";
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import IconCloud from "@/components/magicui/icon-cloud";
+import IconCloud from "@/components/atoms/icon-cloud";
 interface TimelineEntry {
     title: string;
     content: React.ReactNode;

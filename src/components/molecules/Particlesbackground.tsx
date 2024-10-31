@@ -2,12 +2,12 @@
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import AnimatedShinyText from "@/components/magicui/animated-shiny-text";
-import StarButton from "../atoms/star-github-button";
+import AnimatedShinyText from "@/components/atoms/animated-shiny-text";
+import StarButton from "@/components/atoms/star-github-button";
 
-import Particles from "@/components/magicui/particles";
+import Particles from "@/components/atoms/particles";
 import { Link } from "react-router-dom";
-import GetStartedButton from "../atoms/get-started-button";
+import GetStartedButton from "@/components/atoms/get-started-button";
 
 const ParticlesBackground = () => {
     const [color, setColor] = useState("#000000"); // Default particle color for light mode
