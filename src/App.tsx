@@ -8,6 +8,7 @@ import Notes from "./pages/Notes";
 import { About } from "./pages/About";
 import Learnings from "./pages/Learnings";
 import NotFound from "./pages/404";
+import AuthForm from "./components/molecules/signup-form";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
 
                     <Routes>
                         <Route path="/" element={<LandingPage />} />
+                        <Route path="/signup" element={<AuthForm/> } />
                         <Route path="/learnings" element={<Learnings />} />
                         <Route path="/notes" element={<Notes />} />
                         <Route path="/notes/:subjectId" element={<SubjectPage />} />

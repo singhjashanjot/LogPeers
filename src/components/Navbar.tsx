@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ThemeToggle from "@/components/ui/dark-mode-button";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -19,6 +19,7 @@ import HamburgerButton from "./atoms/HamburgerButton";
 
 export function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <div className="w-full p-4 fixed z-[999] justify-between bg-gradient-to-b from-background/70 to-background/0 backdrop-blur-[4px] backdrop-blur-fade">
@@ -130,6 +131,7 @@ export function NavBar() {
                     <Button
                         className="rounded-3xl bg-black dark:bg-slate-50 dark:hover:bg-gray-200 text-white dark:text-slate-800"
                         variant={"outline"}
+                        onClick={() => navigate("/signup")}
                     >
                         Sign Up
                     </Button>
