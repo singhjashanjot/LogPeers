@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <footer className="text-black dark:text-white py-6 bg-background border">
-            <div className="container mx-auto flex justify-between items-center">
+            <div className="container mx-auto flex justify-between items-center px-4">
                 <div>
-                    <h2 className="text-lg font-bold">LogPeers</h2>
+                    <h2 className="crazyfont text-lg font-bold">LogPeers</h2>
                     <p className="text-sm mt-2">Simplifying your learning experience.</p>
                 </div>
                 <div className="flex space-x-4 ml-auto">
@@ -20,7 +20,7 @@ export default function Footer() {
                     <a href="#" className="hover:text-gray-400"><i className="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div className="text-center mt-4 text-sm">
+            <div className="text-center mt-4 text-sm px-4">
                 &copy; 2024 LogPeers. All rights reserved.
             </div>
         </footer>

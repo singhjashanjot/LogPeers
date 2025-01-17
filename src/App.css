@@ -1,13 +1,13 @@
 
 @font-face {
-    src: url("./assets/font/Relative-Faux.ttf") format("truetype"); /* Update the path */
-    font-family: "Relative Faux";
+    src: url("./assets/fonts/The-Seasons-lt.otf") format("truetype"); /* Update the path */
+    font-family: "The Seasons";
     font-weight: normal;
     font-style: normal;
 }
 
 .crazyfont {
-    font-family: "Relative Faux", sans-serif;
+    font-family: "The Seasons", sans-serif;
 }
 .f1f0ee {
     background-color: #f1f0ee;

@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronLeft, Download, Eye, Book } from "lucide-react";
-import { useNavigate, useParams } from "react-router-dom";  // Import useParams hook
+import { useNavigate, useParams, useLocation, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -10,9 +10,21 @@ import { PDFViewer } from "@/components/molecules/PDFViewer";
 
 export default function SubjectPage() {
   const navigate = useNavigate();
-  const { subjectId } = useParams();  // Get subjectId from URL params
-  const subject = subjects.find((s) => s.id === subjectId);  // Use subjectId from params
-  const [selectedNote, setSelectedNote] = useState<string | null>(null);
+  const location = useLocation();
+  const { subjectId } = useParams();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const noteParam = searchParams.get("note");
+
+  const subject = subjects.find((s) => s.id === subjectId);
+  const [selectedNote, setSelectedNote] = useState<string | null>(noteParam || null);
+
+  useEffect(() => {
+    if (selectedNote) {
+      setSearchParams({ note: selectedNote });
+    } else {
+      setSearchParams({});
+    }
+  }, [selectedNote, setSearchParams]);
 
   if (!subject) {
     return (
@@ -98,7 +110,7 @@ export default function SubjectPage() {
                             <Button
                               variant="outline"
                               size="sm"
-                              onClick={() => window.open(topic.notes_link, '_blank')}
+                              onClick={() => window.open(topic.notes_link, "_blank")}
                             >
                               <Download className="w-4 h-4 mr-2" />
                               Download

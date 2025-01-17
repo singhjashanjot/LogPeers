@@ -101,7 +101,7 @@ export default function NotesPage() {
         <header className="container mx-auto px-4 py-8 md:px-6 lg:py-12">
           <div className="mx-auto max-w-3xl text-center">
             <motion.h1
-              className="pt-40 text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl lg:text-6xl"
+              className="crazyfont pt-40 text-3xl font-bold tracking-tighter text-foreground sm:text-4xl md:text-5xl lg:text-6xl"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}

@@ -7,7 +7,7 @@ import Footer from "@/components/molecules/footer";
 
 const LandingPage = () => {
     return (
-        <section className=" bg-green-50 dark:bg-black min-h-screen ">
+        <section className="bg-background min-h-screen">
             <ParticlesBackground />
             <TimeLine />
             <Testimonials />

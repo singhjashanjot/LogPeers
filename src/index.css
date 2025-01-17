@@ -53,35 +53,35 @@ html.lenis, html.lenis body {
     --radius: 0.5rem
   }
   .dark {
-    --background: 210 100% 1%; /* Very dark gray for the background (near black) */
-    --foreground: 60 150% 99%; /* Off-white for text (slightly softer than pure white) */
+    --background: 27 18% 0%; /* Dark gray for the background */
+    --foreground: 0 0% 100%; /* White for text */
     
-    --card: 2 0% 10%; /* Dark gray for card backgrounds */
-    --card-foreground: 0 0% 95%; /* Slightly off-white for card text */
+    --card: 27 18% 0%; /* Slightly lighter dark gray for card backgrounds */
+    --card-foreground: 0 0% 100%; /* White for card text */
   
-    --popover: 2 0% 10%; /* Match card background for popovers */
-    --popover-foreground: 0 0% 95%; /* Off-white for popover text */
+    --popover: 27 18% 0%; /* Match card background for popovers */
+    --popover-foreground: 0 0% 100%; /* White for popover text */
   
-    --primary: 0 0% 90%; /* Soft white for primary elements */
-    --primary-foreground: 2 0% 5%; /* Very dark gray for primary text */
+    --primary: 27 18% 0%; /* Light gray for primary elements */
+    --primary-foreground: 0 0% 100%; /* White for primary text */
   
-    --secondary: 0 0% 85%; /* Light gray for secondary elements */
-    --secondary-foreground: 2 0% 5%; /* Very dark gray for secondary text */
+    --secondary: 27 18% 0%; /* Lighter gray for secondary elements */
+    --secondary-foreground: 0 0% 100%; /* White for secondary text */
   
-    --muted: 2 0% 10%; /* Dark gray for muted elements */
+    --muted: 27 18% 0%; /* Dark gray for muted elements */
     --muted-foreground: 0 0% 80%; /* Light gray for muted text */
   
-    --border: 2 0% 15%; /* Darker gray for borders */
-    --input: 2 0% 10%; /* Dark gray for inputs */
+    --border: 27 18% 0%; /* Dark gray for borders */
+    --input: 27 18% 0%; /* Dark gray for inputs */
   
-    --ring: 0 0% 90%; /* Soft white for focused elements */
+    --ring: 27 18% 0%; /* Light gray for focused elements */
     
-    --chart-1: 0 0% 90%; /* Soft white for charts */
-    --chart-2: 0 0% 90%; /* Soft white for charts */
-    --chart-3: 0 0% 90%; /* Soft white for charts */
-    --chart-4: 0 0% 90%; /* Soft white for charts */
-    --chart-5: 0 0% 90%; /* Soft white for charts */
-}
+    --chart-1: 27 18% 0%; /* Light gray for charts */
+    --chart-2: 27 18% 0%; /* Light gray for charts */
+    --chart-3: 27 18% 0%; /* Light gray for charts */
+    --chart-4: 27 18% 0%; /* Light gray for charts */
+    --chart-5: 27 18% 0%; /* Light gray for charts */
+  }
 
   
 

@@ -21,12 +21,14 @@ export function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div className="w-full p-4 backdrop-blur-sm border shadow-lg fixed z-[999] justify-between">
+        <div className="w-full p-4 fixed z-[999] justify-between bg-gradient-to-b from-background/70 to-background/0 backdrop-blur-[4px] backdrop-blur-fade">
             {/* Navbar container */}
             <div className="flex justify-between items-center">
-                {/* Left Section: Logo and Menu */}
+                {/* Left Section: Logo*/}
+                {/* Menu */}
+                
                 <div className="flex items-center gap-4">
-                    <NavigationMenu>
+                <NavigationMenu>
                         <NavigationMenuList>
                             <NavigationMenuItem>
                                 <Link to="/">
@@ -42,6 +44,8 @@ export function NavBar() {
                             </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>
+                </div>
+                <div className="flex items-center gap-4">
 
                     {/* Navigation Menu for larger screens */}
                     <NavigationMenu className="hidden md:flex">
@@ -120,21 +124,15 @@ export function NavBar() {
                         </NavigationMenuList>
                     </NavigationMenu>
                 </div>
-
-                {/* Right Section: Theme Toggle, Button Group, and Hamburger for mobile */}
+                {/* Right Section: Sign Up */}
                 <div className="flex items-center gap-4">
-                    {/* Theme Toggle */}
                     <ThemeToggle />
-
-                    {/* Button Group */}
                     <Button
                         className="rounded-3xl bg-black dark:bg-slate-50 dark:hover:bg-gray-200 text-white dark:text-slate-800"
                         variant={"outline"}
                     >
                         Sign Up
                     </Button>
-
-                    {/* Mobile Hamburger Menu */}
                     <div className="md:hidden">
                         <HamburgerButton
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
