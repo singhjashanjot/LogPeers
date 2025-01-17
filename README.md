@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/69c3ec04-ee09-4091-9750-34b059de81e5" alt="LogPeers Home Page">
+  <img src="https://github.com/user-attachments/assets/490eaebc-2cf2-47d3-a803-67a9db863c6c" alt="LogPeers Home Page">
 </p>
 
 <h1 align="center" style="font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 3rem;">LogPeers</h1>
