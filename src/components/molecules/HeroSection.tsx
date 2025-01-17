@@ -1,34 +1,8 @@
-import { useEffect, useState } from "react";
 import StarButton from "@/components/atoms/star-github-button";
 import { Meteors } from "@/components/atoms/Meteors";
 import GetStartedButton from "@/components/atoms/get-started-button";
 
 const HeroSection = () => {
-    const [color, setColor] = useState("#000000");
-
-    useEffect(() => {
-        const updateParticleColor = () => {
-            const htmlElement = document.documentElement;
-            if (htmlElement.classList.contains("dark")) {
-                setColor("#ffffff");
-            } else {
-                setColor("#000000");
-            }
-        };
-
-        updateParticleColor();
-
-        const observer = new MutationObserver(updateParticleColor);
-        observer.observe(document.documentElement, {
-            attributes: true,
-            attributeFilter: ["class"],
-        });
-
-        return () => {
-            observer.disconnect();
-        };
-    }, []);
-
     return (
         <div className="relative z-0 max-w-7xl lg:mx-auto flex min-h-[600px] w-full flex-col justify-center overflow-hidden rounded-lg bg-background p-8">
                 <Meteors number={20} />
