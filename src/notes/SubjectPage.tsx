@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ChevronLeft, Download, Eye, Book } from "lucide-react";
-import { useNavigate, useParams, useLocation, useSearchParams } from "react-router-dom";
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -10,7 +10,6 @@ import { PDFViewer } from "@/components/molecules/PDFViewer";
 
 export default function SubjectPage() {
   const navigate = useNavigate();
-  const location = useLocation();
   const { subjectId } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
   const noteParam = searchParams.get("note");
