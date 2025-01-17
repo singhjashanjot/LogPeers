@@ -40,7 +40,7 @@ export default function MinimalistFAQSection() {
             ref={sectionRef} 
             className="w-full mx-auto py-16 px-4 bg-white dark:bg-black transition-colors duration-300"
         >
-            <h2 className="pointer-events-none font-bold whitespace-pre-wrap bg-gradient-to-b from-black to-gray-400/80 bg-clip-text text-center text-4xl 
+            <h2 className="crazyfont pointer-events-none font-bold whitespace-pre-wrap bg-gradient-to-b from-black to-gray-400/80 bg-clip-text text-center text-4xl 
                 leading-none text-transparent dark:from-white dark:to-slate-900/10 py-10"
             >
                 Frequently Asked Questions

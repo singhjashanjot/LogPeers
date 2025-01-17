@@ -1,25 +1,24 @@
-"use client"
+import { useState } from "react";
+import { Document, Page, pdfjs } from "react-pdf";
+import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
-import { useState } from "react"
-import { Document, Page, pdfjs } from "react-pdf"
-import { Button } from "@/components/ui/button"
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
-import { ChevronLeft, ChevronRight, X } from "lucide-react"
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
+// Update to use the correct worker source
+pdfjs.GlobalWorkerOptions.workerSrc = "public/pdf.worker.mjs"; 
 
 interface PDFViewerProps {
-  pdfUrl: string
-  onClose: () => void
+  pdfUrl: string;
+  onClose: () => void;
 }
 
 export function PDFViewer({ pdfUrl, onClose }: PDFViewerProps) {
-  const [numPages, setNumPages] = useState<number | null>(null)
-  const [pageNumber, setPageNumber] = useState(1)
+  const [numPages, setNumPages] = useState<number | null>(null);
+  const [pageNumber, setPageNumber] = useState(1);
 
-  function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
-    setNumPages(numPages)
-  }
+  const onDocumentLoadSuccess = ({ numPages }: { numPages: number }) => {
+    setNumPages(numPages);
+  };
 
   return (
     <Dialog open={true} onOpenChange={onClose}>
@@ -36,9 +35,13 @@ export function PDFViewer({ pdfUrl, onClose }: PDFViewerProps) {
           <Document
             file={pdfUrl}
             onLoadSuccess={onDocumentLoadSuccess}
+            onLoadError={(error) => console.error("Document load error:", error)}
             className="flex justify-center"
           >
-            <Page pageNumber={pageNumber} />
+            <Page
+              pageNumber={pageNumber}
+              onRenderError={(error) => console.error("Page render error:", error)}
+            />
           </Document>
         </div>
         <div className="flex justify-between items-center mt-4">
@@ -62,5 +65,5 @@ export function PDFViewer({ pdfUrl, onClose }: PDFViewerProps) {
         </div>
       </DialogContent>
     </Dialog>
-  )
+  );
 }

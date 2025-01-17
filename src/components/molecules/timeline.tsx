@@ -43,7 +43,7 @@ export default function timeline() {
       ),
     },
     {
-      title: "Topic-Based Feeds",
+      title: "Topic Based Feeds",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
