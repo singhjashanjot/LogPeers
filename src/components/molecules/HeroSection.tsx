@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import StarButton from "@/components/atoms/star-github-button";
-import Particles from "@/components/atoms/particles";
+import { Meteors } from "@/components/atoms/Meteors";
 import GetStartedButton from "@/components/atoms/get-started-button";
 
-const ParticlesBackground = () => {
+const HeroSection = () => {
     const [color, setColor] = useState("#000000");
 
     useEffect(() => {
@@ -30,7 +30,8 @@ const ParticlesBackground = () => {
     }, []);
 
     return (
-        <div className="z-0 max-w-7xl lg:mx-auto flex min-h-[600px] w-full flex-col justify-center overflow-hidden rounded-lg bg-background p-8">
+        <div className="relative z-0 max-w-7xl lg:mx-auto flex min-h-[600px] w-full flex-col justify-center overflow-hidden rounded-lg bg-background p-8">
+                <Meteors number={20} />
             <div className="px-5 mt-8"> 
                 <span className="crazyfont pointer-events-none font-bold whitespace-pre-wrap bg-gradient-to-b from-black via-gray-900 to-gray-700 bg-clip-text text-4xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight sm:leading-snug md:leading-none text-transparent dark:from-white dark:via-gray-300 dark:to-gray-500/80 block mt-5">
                     Simplify Learning, Amplify Success
@@ -47,13 +48,4 @@ const ParticlesBackground = () => {
     );
 };
 
-export default ParticlesBackground;
-{/* <Particles
-        className="absolute inset-0 pointer-events-none"
-        quantity={20}
-        ease={12}
-        color={color}
-        refresh
-        staticity={25}
-        vy={-0.01}
-    /> */}
+export default HeroSection;
