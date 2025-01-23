@@ -1,0 +1,30 @@
+{
+    "name": "LogPeers",
+    "short_name": "LogPeers",
+    "description": "LogPeers makes learning effortless with curated resources and study materials, so you can focus on mastering skills and reaching new heights!",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "background_color": "#fcfcfc",
+    "theme_color": "#030303",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["education", "productivity"],
+    "dir": "ltr",
+    "lang": "en",
+    "prefer_related_applications": false,
+    "related_applications": []
+}
