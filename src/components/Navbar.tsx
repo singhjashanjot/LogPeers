@@ -4,15 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import ThemeToggle from "@/components/ui/dark-mode-button";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import {
-    BookOpen as Book,
-    Home,
-    BookOpen,
-    NotebookPen,
-    UserPlus,
-} from "lucide-react";
-import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { BookOpen as Book } from "lucide-react";
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -22,14 +14,12 @@ import {
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import HamburgerButton from "./atoms/HamburgerButton";
 import { useAuth } from "@/contexts/AuthContext";
 import { DockComponent } from "./molecules/DockComponent";
 
 export function NavBar() {
     const navigate = useNavigate();
-    const location = useLocation();
-    const { isAuthenticated, user, logout } = useAuth();
+    const { isAuthenticated, logout } = useAuth();
 
     return (
         <>

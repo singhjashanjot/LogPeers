@@ -38,19 +38,12 @@ export function DockComponent() {
                             label="Notes" 
                             isActive={location.pathname === "/notes"} 
                         />
-                        {isAuthenticated ? (
+                        {isAuthenticated && (
                             <DockItem 
                                 to="/profile" 
                                 icon={<UserProfile />} 
                                 label="Profile" 
                                 isActive={location.pathname === "/profile"} 
-                            />
-                        ) : (
-                            <DockItem 
-                                to="/signup" 
-                                icon={<UserPlus />} 
-                                label="Sign Up" 
-                                isActive={location.pathname === "/signup"} 
                             />
                         )}
                     </div>
