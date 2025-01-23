@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { Home, BookOpen, NotebookPen, UserPlus } from "lucide-react";
+import { Home, BookOpen, NotebookPen } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 
 interface DockItemProps {

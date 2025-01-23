@@ -16,13 +16,13 @@ interface User {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
+    const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
     const [user, setUser] = useState<User | null>(null);
 
     const logout = () => {
         setUser(null);
         setIsAuthenticated(false);
-        localStorage.removeItem('authToken');
+        localStorage?.removeItem('authToken');
     };
 
     useEffect(() => {
