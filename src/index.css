@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 @font-face {
   src: url("./assets/fonts/The-Seasons-lt.otf") format("truetype"); /* Update the path */
   font-family: "The Seasons";
@@ -92,16 +92,6 @@ html.lenis, html.lenis body {
   
 
 }
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
-
 
 .crazyfont {
   font-family: "The Seasons", sans-serif;
