@@ -14,7 +14,7 @@ import { AuthProvider } from '@/contexts/AuthContext';
 function App() {
     return (
         <AuthProvider>
-            <ReactLenis root options={{ lerp: 0.2 }}>
+            <ReactLenis root options={{ lerp: 0.1 }}>
                 <Router>
                     <div className="App relative overflow-hidden selection:bg-slate-200 selection:text-black">
                         <div className="">

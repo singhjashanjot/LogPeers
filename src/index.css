@@ -1,6 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  src: url("./assets/fonts/The-Seasons-lt.otf") format("truetype"); /* Update the path */
+  font-family: "The Seasons";
+  font-weight: bolder;
+  font-style: normal;
+}
 * {
   touch-action: manipulation; /* Prevent touch gestures that can cause zooming */
 }
@@ -93,4 +99,13 @@ html.lenis, html.lenis body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+
+.crazyfont {
+  font-family: "The Seasons", sans-serif;
+}
+.f1f0ee {
+  background-color: #f1f0ee;
 }
