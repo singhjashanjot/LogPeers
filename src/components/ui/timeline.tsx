@@ -1,7 +1,7 @@
 "use client";
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
-import IconCloud from "@/components/atoms/icon-cloud";
+import { IconCloud } from "@/components/atoms/icons";
 interface TimelineEntry {
     title: string;
     content: React.ReactNode;
@@ -45,7 +45,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                     </p>
                 </div>
                 <div className="relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg ml-auto portrait:ml-0 bg-transparent px-20">
-                    <IconCloud iconSlugs={slugs} />
+                    <IconCloud />
                 </div>
             </div>
 
