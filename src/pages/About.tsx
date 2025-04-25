@@ -1,5 +1,4 @@
 import FlickeringGrid from "@/components/ui/flickering-grid";
-import { Image } from "@nextui-org/image";
 import { motion } from 'framer-motion'
 import { Link as LinkIcon } from 'lucide-react'
 
@@ -22,22 +21,14 @@ export function About() {
         }
     ]
     return (
-
-
-        <section className="relative w-full min-h-screen">
-            <FlickeringGrid
-                className="z-0"
-                squareSize={2}
-                gridGap={5}
-                color="#6B7280"
-                maxOpacity={0.5}
-                flickerChance={0.1}
-            />
-            <div className="relative z-10 flex flex-col items-center top-14 text-center p-8">
-                <h1 className="pointer-events-none font-bold whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text text-center text-7xl leading-none text-transparent dark:from-white dark:to-slate-900/10">
-                    Here's What You Need to Know About LogPeers!
+        <section className="mb-20 md:pb-16 pt-16 relative overflow-hidden">
+            <FlickeringGrid className="-z-10" />
+            <div className="container">
+                <h1 className="crazyfont text-center pb-12 text-4xl font-bold leading-tight md:text-6xl tracking-tighter">
+                    About Us
                 </h1>
-                <div className="flex items-center justify-center gap-20 mt-8">
+
+                <div className="flex flex-col py-16 lg:flex-row items-center justify-center gap-12">
                     <img
                         src="book.png"
                         alt="Description of Image"
@@ -61,7 +52,7 @@ export function About() {
                                 whileHover={{ scale: 1.05 }}
 
                             >
-                                <Image
+                                <img
                                     src={member.image}
                                     alt={member.name}
                                     width={300}
@@ -87,7 +78,6 @@ export function About() {
                         ))}
                     </div>
                 </section>
-
 
 
                 {/* New Section for Table */}
