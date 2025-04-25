@@ -4,6 +4,7 @@
         "source": "/(.*)",
         "destination": "/index.html"
       }
-    ]
+    ],
+    "buildCommand": "npm install --no-optional && npm run build",
+    "installCommand": "npm install --no-optional"
   }
-  
