@@ -1,10 +1,6 @@
 {
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/index.html"
-      }
-    ],
-    "buildCommand": "npm install --no-optional && npm run build",
-    "installCommand": "npm install --no-optional"
-  }
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
