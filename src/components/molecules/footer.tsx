@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
-        <footer className="text-black dark:text-white py-6 bg-background border">
+        <footer className="text-black dark:text-white py-6 bg-background border border-gray-200 dark:border-gray-800">
             <div className="container mx-auto flex justify-between items-center px-4">
                 <div>
                     <h2 className="crazyfont text-lg font-bold">LogPeers</h2>
