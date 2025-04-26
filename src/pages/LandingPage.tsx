@@ -8,8 +8,12 @@ import Footer from "@/components/molecules/footer";
 const LandingPage = () => {
     return (
         <section className="bg-background min-h-screen">
-            <HeroSection />
-            <TimeLine />
+            <div className="pb-0 md:pb-4"> {/* Added padding-bottom control */}
+                <HeroSection />
+            </div>
+            <div className="mt-0"> {/* Removed any top margin */}
+                <TimeLine />
+            </div>
             <Testimonials />
             <MinimalistFAQSection />
             <Footer />

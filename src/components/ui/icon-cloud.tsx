@@ -48,8 +48,8 @@ export function iconCloud({ icons, images }: IconCloudProps) {
             if (canvasRef.current) {
                 const parent = canvasRef.current.parentElement;
                 if (parent) {
-                    canvasRef.current.width = parent.clientWidth;
-                    canvasRef.current.height = 600; // Keep the height the same
+                    canvasRef.current.width = parent.clientWidth * 1.2; // 20% wider
+                    canvasRef.current.height = 800; // Increased height from 600 to 800
                 }
             }
         };
@@ -71,8 +71,8 @@ export function iconCloud({ icons, images }: IconCloudProps) {
 
         const newIconCanvases = items.map((item, index) => {
             const offscreen = document.createElement("canvas");
-            offscreen.width = 40;
-            offscreen.height = 40;
+            offscreen.width = 50; // Increased from 40
+            offscreen.height = 50; // Increased from 40
             const offCtx = offscreen.getContext("2d");
 
             if (offCtx) {
@@ -91,18 +91,18 @@ export function iconCloud({ icons, images }: IconCloudProps) {
 
                         // Create circular clipping path
                         offCtx.beginPath();
-                        offCtx.arc(20, 20, 20, 0, Math.PI * 2);
+                        offCtx.arc(25, 25, 25, 0, Math.PI * 2); // Adjusted center and radius from 20 to 25
                         offCtx.closePath();
                         offCtx.clip();
 
                         // Draw the image
-                        offCtx.drawImage(img, 0, 0, 40, 40);
+                        offCtx.drawImage(img, 0, 0, 50, 50); // Increased from 40 to 50
 
                         imagesLoadedRef.current[index] = true;
                     };
                 } else {
                     // Handle SVG icons
-                    offCtx.scale(0.4, 0.4);
+                    offCtx.scale(0.5, 0.5); // Increased scale from 0.4 to 0.5
                     const svgString = renderToString(
                         item as React.ReactElement
                     );
@@ -145,9 +145,9 @@ export function iconCloud({ icons, images }: IconCloudProps) {
             const z = Math.sin(phi) * r;
 
             newIcons.push({
-                x: x * 110,
-                y: y * 110,
-                z: z * 110,
+                x: x * 160, // Increased radius from 110 to 140
+                y: y * 160, // Increased radius from 110 to 140
+                z: z * 160, // Increased radius from 110 to 140
                 scale: 1,
                 opacity: 1,
                 id: i,
@@ -199,7 +199,7 @@ export function iconCloud({ icons, images }: IconCloudProps) {
                         Math.pow(targetY - currentY, 2)
                 );
 
-                const duration = Math.min(1500, Math.max(600, distance * 800)); // Faster animation
+                const duration = Math.min(1200, Math.max(500, distance * 600)); // Faster animation (from 1500/600/800)
 
                 setTargetRotation({
                     x: targetX,
@@ -231,8 +231,8 @@ export function iconCloud({ icons, images }: IconCloudProps) {
             const deltaY = e.clientY - lastMousePos.y;
 
             rotationRef.current = {
-                x: rotationRef.current.x + deltaY * 0.002,
-                y: rotationRef.current.y + deltaX * 0.002,
+                x: rotationRef.current.x + deltaY * 0.003, // Increased from 0.002
+                y: rotationRef.current.y + deltaX * 0.003, // Increased from 0.002
             };
 
             setLastMousePos({ x: e.clientX, y: e.clientY });
@@ -260,7 +260,7 @@ export function iconCloud({ icons, images }: IconCloudProps) {
             const dx = mousePos.x - centerX;
             const dy = mousePos.y - centerY;
             const distance = Math.sqrt(dx * dx + dy * dy);
-            const speed = 0.0045 + (distance / maxDistance) * 0.015; // Increased from 0.003/0.01 for faster rotation
+            const speed = 0.0055 + (distance / maxDistance) * 0.02; // Increased from 0.0045/0.015
 
             if (targetRotation) {
                 const elapsed = performance.now() - targetRotation.startTime;
@@ -320,22 +320,22 @@ export function iconCloud({ icons, images }: IconCloudProps) {
                     ) {
                         ctx.drawImage(
                             iconCanvasesRef.current[index],
-                            -20,
-                            -20,
-                            40,
-                            40
+                            -22, // Increased from -20
+                            -22, // Increased from -20
+                            45,  // Increased from 40
+                            45   // Increased from 40
                         );
                     }
                 } else {
                     // Show numbered circles if no icons/images are provided
                     ctx.beginPath();
-                    ctx.arc(0, 0, 20, 0, Math.PI * 2);
+                    ctx.arc(0, 0, 25, 0, Math.PI * 2); // Increased radius from 20 to 25
                     ctx.fillStyle = "#4444ff";
                     ctx.fill();
                     ctx.fillStyle = "white";
                     ctx.textAlign = "center";
                     ctx.textBaseline = "middle";
-                    ctx.font = "16px Arial";
+                    ctx.font = "20px Arial"; // Increased font size from 16px to 20px
                     ctx.fillText(`${icon.id + 1}`, 0, 0);
                 }
 
@@ -356,13 +356,13 @@ export function iconCloud({ icons, images }: IconCloudProps) {
     return (
         <canvas
             ref={canvasRef}
-            width={800} // Default width - will be overridden by the resize handler
-            height={800}
+            width={1000} // Increased default width from 800 to 1000
+            height={1000} // Increased default height from 800 to 1000
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
-            className="rounded-lg w-full"
+            className="rounded-lg w-full h-full" // Added h-full to make sure the canvas takes full height of container
             aria-label="Interactive 3D Icon Cloud"
             role="img"
         />
