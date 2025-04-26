@@ -34,7 +34,7 @@ export function NavBar() {
                                         <NavigationMenuLink
                                             className={
                                                 navigationMenuTriggerStyle() +
-                                                " bg-transparent tracking-wide crazyfont text-xl font-semibold hover:bg-background dark:hover:text-white"
+                                                " bg-transparent tracking-wide crazyfont text-xl font-semibold hover:bg-background dark:text-white dark:hover:text-white"
                                             }
                                         >
                                             LogPeers

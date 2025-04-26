@@ -27,9 +27,9 @@ export default function ThemeToggle() {
         <div className="flex flex-col justify-center items-center text-center p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800">
             <button onClick={toggleTheme} className="relative cursor-pointer ">
                 {theme === "dark" ? (
-                    <Sun className="max-w-max" />
+                    <Sun className="max-w-max text-white" />
                 ) : (
-                    <Moon className="max-w-max" />
+                    <Moon className="max-w-max dark:text-white" />
                 )}
                 <span className="sr-only">Switch to light/dark mode</span>
             </button>
