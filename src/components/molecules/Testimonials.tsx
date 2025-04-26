@@ -99,7 +99,7 @@ const ReviewCard = ({
 export default function Testimonials() {
     return (
         <div>
-            <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background ">
+            <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800 bg-background">
                 <h1 className="crazyfont pointer-events-none font-bold whitespace-pre-wrap bg-gradient-to-b from-black via-gray-900 to-gray-700 bg-clip-text text-center text-2xl sm:text-2xl md:text-4xl lg:text-4xl leading-tight sm:leading-snug md:leading-none text-transparent dark:from-white dark:via-gray-300 dark:to-gray-500/80 py-10 mx-6">
                     Here Is What Our Users Have To Say About Us.
                 </h1>
