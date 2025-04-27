@@ -16,9 +16,10 @@ export default {
     			marquee: 'marquee var(--duration) linear infinite',
     			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite',
     			'accordion-down': 'accordion-down 0.2s ease-out',
-    			'accordion-up': 'accordion-up 0.2s ease-out'
-    		},
-			keyframes: {
+    			'accordion-up': 'accordion-up 0.2s ease-out',
+                "dash-from-left": "dashoffset 2.5s linear forwards"
+          },
+          keyframes: {
 				meteor: {
 					"0%": { transform: "rotate(215deg) translateX(0)", opacity: 0.1 },
 					"70%": { opacity: 1 },
@@ -66,8 +67,16 @@ export default {
     				to: {
     					height: '0'
     				}
-    			}
-    		},
+    			},
+                dashoffset: {
+                  from: {
+                    strokeDashoffset: "320"
+                  },
+                  to: {
+                    strokeDashoffset: "0"
+                  }
+                }
+          },
     		borderRadius: {
     			lg: 'var(--radius)',
     			md: 'calc(var(--radius) - 2px)',
@@ -117,17 +126,7 @@ export default {
     		}
     	}
     },
-	plugins: [require("tailwindcss-animate")],
-	addVariablesForColors,
-}
-
-function addVariablesForColors({ addBase, theme }) {
-    let allColors = flattenColorPalette(theme("colors"));
-    let newVars = Object.fromEntries(
-        Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-    );
-
-    addBase({
-        ":root": newVars,
-    });
+	plugins: [
+        require("tailwindcss-animate")
+    ],
 }
