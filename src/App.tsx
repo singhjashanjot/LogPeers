@@ -5,7 +5,7 @@ import SubjectPage from "./notes/SubjectPage";
 import "./index.css";
 import { ReactLenis } from "lenis/react"; // Correct import for ReactLenis
 import Notes from "./pages/Notes";
-import { About } from "./pages/About";
+import AboutPage from "./pages/About";
 import Learnings from "./pages/Learnings";
 import NotFound from "./pages/404";
 import AuthForm from "./components/molecules/signup-form";
@@ -27,7 +27,7 @@ function App() {
                             <Route path="/learnings" element={<Learnings />} />
                             <Route path="/notes" element={<Notes />} />
                             <Route path="/notes/:subjectId" element={<SubjectPage />} />
-                            <Route path="/about" element={<About />} />
+                            <Route path="/about" element={<AboutPage />} />
                             <Route path="*" element={<NotFound />} />
                         </Routes>
                     </div>
