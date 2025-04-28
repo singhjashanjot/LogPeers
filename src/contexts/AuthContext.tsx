@@ -22,18 +22,22 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     const logout = () => {
         setUser(null);
         setIsAuthenticated(false);
-        localStorage?.removeItem('authToken');
+        if (typeof window !== 'undefined') {
+            localStorage.removeItem('authToken');
+        }
     };
 
     useEffect(() => {
         const checkAuth = async () => {
             try {
-                const token = localStorage.getItem('authToken');
-                if (token) {
-                    // Validate token with your backend
-                    // const userData = await validateToken(token);
-                    // setUser(userData);
-                    setIsAuthenticated(true);
+                if (typeof window !== 'undefined') {
+                    const token = localStorage.getItem('authToken');
+                    if (token) {
+                        // Validate token with your backend
+                        // const userData = await validateToken(token);
+                        // setUser(userData);
+                        setIsAuthenticated(true);
+                    }
                 }
             } catch (error) {
                 console.error('Auth check failed:', error);
@@ -48,7 +52,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         setUser(userData);
         setIsAuthenticated(true);
         // Store auth token
-        // localStorage.setItem('authToken', userData.token);
+        if (typeof window !== 'undefined') {
+            // localStorage.setItem('authToken', userData.token);
+        }
     };
 
     return (
