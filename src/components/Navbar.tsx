@@ -23,7 +23,7 @@ export function NavBar() {
     return (
         <>
             {/* Desktop Navbar */}
-            <div className="w-full p-4 fixed z-[999] justify-between bg-gradient-to-b from-background/70 to-background/0 backdrop-blur-[4px] backdrop-blur-fade md:block">
+            <div className="w-full p-4 fixed z-[999] justify-between bg-white dark:bg-[#0F172A] backdrop-blur-[4px] backdrop-blur-fade md:block">
                 <div className="flex justify-between items-center">
                     {/* Left Section: Logo*/}
                     <div className="flex items-center gap-4">
@@ -50,7 +50,7 @@ export function NavBar() {
                         <NavigationMenu className="hidden md:flex">
                             <NavigationMenuList>
                                 <NavigationMenuItem>
-                                    <NavigationMenuTrigger>
+                                    <NavigationMenuTrigger className="bg-transparent dark:bg-transparent dark:hover:bg-transparent dark:text-white">
                                         Getting started
                                     </NavigationMenuTrigger>
                                     <NavigationMenuContent>
@@ -107,7 +107,7 @@ export function NavBar() {
                                 <NavigationMenuItem>
                                     <Link to="/learnings">
                                         <NavigationMenuLink
-                                            className={navigationMenuTriggerStyle()}
+                                            className={navigationMenuTriggerStyle() + " dark:bg-transparent dark:hover:bg-transparent"}
                                         >
                                             Learnings
                                         </NavigationMenuLink>
@@ -116,7 +116,7 @@ export function NavBar() {
                                 <NavigationMenuItem>
                                     <Link to="/notes">
                                         <NavigationMenuLink
-                                            className={navigationMenuTriggerStyle()}
+                                            className={navigationMenuTriggerStyle() + " dark:bg-transparent dark:hover:bg-transparent"}
                                         >
                                             Notes
                                         </NavigationMenuLink>
